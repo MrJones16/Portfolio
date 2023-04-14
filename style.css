@@ -1,134 +1,124 @@
 /* Set the default font family and size */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    
-  }
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   
-  /* Style the header */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0px;
-  }
-  
-  /* Style the navigation menu */
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Style the main content area */
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-  }
-  
-  main h2 {
-    margin-top: 0;
-  }
-  
-  /* Style the project listings */
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project h3 {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-  
-  /* Style the contact form */
-  form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #666;
-  }
+}
 
-  /* Style the project listings */
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer{
+  padding: 0px;
+  margin: 0px;
+}
+
+header h1 {
+  margin: 0px;
+}
+
+/* Style the navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the main content area */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+main h2 {
+  margin-top: 10px;
+}
+
+/* Style the contact form */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #666;
+}
+
+/* Style the project listings */
 .projects {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
   
-  .project {
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 400px; /* Add this line to restrict the width */
-    margin: 0 auto; /* Add this line to center the projects */
-  }
-  
-  .project img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project h3 {
-    margin: 0;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .project p {
-    padding: 10px;
-    margin: 0;
-  }
+.project {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px; /* Add this line to restrict the width */
+  margin: 0 auto; /* Add this line to center the projects */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.project p {
+  padding: 10px;
+  margin: 0;
+}
+
