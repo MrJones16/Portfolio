@@ -19,8 +19,9 @@ body {
   /* Style the navigation menu */
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 10px;
   }
   
   nav ul {
