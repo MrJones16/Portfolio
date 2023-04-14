@@ -57,6 +57,8 @@ main {
 
 main h2 {
   margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
 }
 
 /* Style the contact form */
@@ -122,3 +124,8 @@ form button:hover {
   margin: 0;
 }
 
+.contact-socials{
+  /*display: grid;*/
+  grid-template-columns: repeat(2,1fr);
+  padding: 10px;
+}
