@@ -2,6 +2,9 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    
   }
   
   /* Style the header */
@@ -45,6 +48,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
   }
   
   main h2 {
@@ -92,4 +96,39 @@ body {
   
   form button:hover {
     background-color: #666;
+  }
+
+  /* Style the project listings */
+.projects {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .project {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px; /* Add this line to restrict the width */
+    margin: 0 auto; /* Add this line to center the projects */
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .project p {
+    padding: 10px;
+    margin: 0;
   }
