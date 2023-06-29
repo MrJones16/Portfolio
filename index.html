@@ -7,35 +7,39 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="sidenav">
-		<section class="sidenav-top" style=
-			"background-color:black;
-			color: white;
-			margin: 0;
-			width: 180px; height: 200px;
-			text-align: center;">
-			<p style="margin: auto; font-weight:bold;">Peyton</p>
-			<p style="margin: auto; font-size: 20px;">Game Developer</p>
-		</section>
-		<section class="sidenav-center">
-			<a href="#about-me">About Me</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</section>
-		<section class="sidenav-bottom">
-			<p style="font-size: 12px;">Copyright © My Portfolio</p>
-		</section>
-	</div>
-	<main>
-		<section id="MyName" class="NameArea">
-			<h1>Peyton Jones</h1>
+	<main id="Home">
+		<div class="topnav">
+			<!-- Centered link -->
+			<div class="topnav-centered">
+				<a href="#Home" class="active">Home</a>
+			  </div>
+			
+			  <!-- Left-aligned links (default) -->
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			  <a href="#projects">Projects</a>
+			  <!-- Right-aligned links -->
+			  <div class="topnav-right">
+				<a href="mailto:peytonjamesjones@gmail.com" target="_blank"><img src="assets/logos/gmaillogo.png" height="20px"></a>
+				<a href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank"><img src="assets/logos/linkedin.png" height="20px"></a>
+			  </div>
+		</div>
+		<header>
+			<section id="MyName" class="NameArea">
+				<h1>Peyton Jones</h1>
+			</section>
+		</header>
+			<div class="about-container" id="about">
+				<div class="image">
+					<img src="assets/myself.png" alt="Picture of Peyton Jones">
+				</div>
+				<div class="text">
+					<h2 style="font-family: CyberGraphRegular; font-size: 60px;">About Me</h2>
+					<p>Hello! I am Peyton Jones, a graduate from the University of California Santa Cruz! I have a Bachelor's Degree in Computer Science: Game Design, and it is my passion to develop and play a variety of games. My hobbies are to play games, spend time with friends and family, and explore media revolving around sci-fi, space, and magic!</p>
+				</div>
+			</div>
 
-		</section>
-		<section id="about-me">
-			<h2>About Me</h2>
 			<!--Get a photo of me!-->
-			<p style="text-align: center;">I am a student at the University of California Santa Cruz, and working towards a Bachelor's degree in Computer Science: Game Design. I love playing and working on games, and would love to get experience in the industry. My hobbies are to play games, give my cat lots of love, and explore media revolving around sci-fi or magic!</p>
-		</section>
 		<section id="projects">
 			<h2>My Work</h2>
 			<div class="projects">
@@ -82,7 +86,7 @@
 		</section>
 	</main>
 	<footer>
-		<p>Copyright © My Portfolio</p>
+		<p></p>
 	</footer>
 </body>
 </html>
