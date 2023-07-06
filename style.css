@@ -212,7 +212,7 @@ form button:hover {
   padding-top: 10px;
   padding-bottom: 40px;
   background: rgb(37,51,36);
-  background: linear-gradient(45deg, rgba(37,51,36,1) 0%, rgba(89,103,86,1) 10%, rgba(236,241,236,1) 100%);
+  background: linear-gradient(to top right, rgba(37,51,36,1) 0%, rgba(89,103,86,1) 10%, rgba(236,241,236,1) 100%);
 }
 
 .projects {
