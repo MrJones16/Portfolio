@@ -172,9 +172,13 @@ main h1 { /*Main Name*/
 }
 
 main h2 {
-  margin-top: 10px;
+  font-family: CyberGraphRegular;
+  color: #fff;
+  margin-top: 0px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
+  text-shadow: 3px 3px 0px hsla(0, 0%, 100%, 0.5)
 }
 
 /* Style the contact form */
@@ -252,6 +256,27 @@ form button:hover {
 
 .contact-socials{
   /*display: grid;*/
+  background-color: #111207;
+  background-image: url("assets/Animated-Stars.gif");
   grid-template-columns: repeat(2,1fr);
   padding: 10px;
+  height: 590px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.contact-socials a{
+  color: white;
+  background-color: rgba(89,103,86,1);
+  border-radius: 20px;
+  padding: 10px;
+  font-family: AstroSpace;
+  font-size: 25px;
+}
+
+.contact-container{
+  grid-template-rows: repeat(1, 1fr);
+  display: grid;
+  align-self: center;
+  align-content: center;
+  gap: 20px;
 }
