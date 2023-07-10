@@ -1,46 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio-PJ</title>
+	<title>Peyton Jones | Game Developer</title>
+	<link rel="icon" type="image/x-icon" href="/assets/faviconpj.ico">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="project-style.css">
 </head>
 <body>
-	<header>
-		<h1>Peyton Jones</h1>
-		<nav>
+	<main id="Home">
+		<div class="topnav">
+			<!-- Centered link -->
+			<div class="topnav-centered">
+				<a href="../index.html" class="active">Home</a>
+			  </div>
 			
-			<ul>
-				<li><a href="#about-me">About Me</a></li>
-				<li><a href="#my-work">My Work</a></li>
-				<li><a href="#contact-me">Contact Me</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about-me">
-			<h2>About Me</h2>
-			<p>Write a brief introduction about yourself here.</p>
-		</section>
-		<section id="my-work">
-			<h2>My Work</h2>
-		</section>
-		<section id="contact-me">
-			<h2>Contact Me</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</section>
+			  <!-- Left-aligned links (default) -->
+			  <a href="../index.html#about">About</a>
+			  <a href="../index.html#projects">Projects</a>
+			  <a href="../index.html#contact">Contact</a>
+			  <a href="../Resume.pdf" target="_blank">Resume</a>
+			  <!-- Right-aligned links -->
+			  <div class="topnav-right">
+				<a href="mailto:peytonjamesjones@gmail.com" target="_blank"><img src="../assets/logos/gmaillogo.png" height="20px"></a>
+				<a href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank"><img src="../assets/logos/linkedin.png" height="20px"></a>
+			  </div>
+		</div>
+		<header>
+			<style>
+				header{
+					background-color: #262e24;
+  					background-image: url("../assets/projects/project-elevate/img6.png");
+  					background-position-x: center;
+					background-size:cover;
+  					color: #fff;
+  					width:100vw;
+  					height: 610px;
+  					padding-top: 600px;
+  					margin-top: 0px;
+				}
+			</style>
+			<section id="MyName" class="NameArea">
+				<h1>Escape From Project E.L.E.V.A.T.E</h1>
+			</section>
+		</header>
+		<div class="about-container" id="about" style="background-image: linear-gradient(#000, #282828);">
+			<div class="image">
+				<img src="../assets/projects/project-elevate/Background.png" alt="Picture of Peyton Jones">
+			</div>
+			<div class="text">
+				<h2 style="text-shadow: 3px 3px 0px rgba(0,50,0,0.3)">About this Game</h2>
+				<p style="font-family:PixeloidSans; font-size: 20px; color: rgb(48, 213, 48); text-align: left;">
+					....Rebooting System for Model Name: HOPE, System ID: CM17PM2S2023...
+				</p>
+				<p style="font-family:PixeloidSans; font-size: 20px; color: rgb(48, 213, 48);text-align: left;">
+					... Running Damage Analysis... Walk System Failure. Changed to Hover Support System....Grapple Tether in Functioning Condition. 
+				</p>
+				<p style="font-family:PixeloidSans; font-size: 20px; color: rgb(48, 213, 48);text-align: left;">
+					"Where am I? Where is everyone else?"
+				</p>
+				<p style="font-family:PixeloidSans; font-size: 20px; color: rgb(48, 213, 48);text-align: left;">
+					....Allow me to inform you HOPE. Project E.L.E.V.A.T.E had an accident 3 years ago. All of the other robots were put out of commission. The faculty you are trapped in is the lowest area of E.L.E.V.A.T.E, which the public doesn't know. Traverse through the area to find a way out of here. The answer should lie there.
+				</p>
+			</div>
+		</div>
+		<div class="text-and-images" style="background-image: url(../assets/projects/project-elevate/Tile.png);">
+			<div class="left-text" style="font-family:PixeloidSans; font-size: 25px; color: rgb(168, 255, 168);">
+				<p>
+					Guide Test Subject HOPE throughout the remainder of project ELEVATE!
+					Use your grapple gun to zip around each of the levels, go through each puzzle and make it to the end!
+					Find out about what happened in this area, and possibly, newer secrets never known before...
+				</p>
+				<hr>
+				<h3>
+					Main Mechanics:
+				</h3>
+				<ul>
+					<li>Use the grapple gun to traverse through the remains of E.L.E.V.A.T.E!</li>
+					<li>The Green Zip Block will move you directly toward it!</li>
+					<li>Use The Jump Pads to rise up to high areas!</li>
+					<li>Watch out for hazards! They will make you restart...</li>
+				</ul>
+
+				<h3>
+					Controls:
+				</h3>
+				<ul>
+					<li>W / SHIFT - Retract/Retract with Boost</li>
+					<li>S / CTRL - Extend/Extend with Boost</li>
+					<li>A and D - Swing/Move Left and Right</li>
+					<li>Left Click - Grapple Towards Mouse</li>
+					<li>Space / Right Click - Release Grapple</li>
+					<li>Arrow Keys: Quick Grapple</li>
+					<li>R - Reset</li>
+				</ul>
+				<hr>
+				<p>
+					The Compact Edition of this game focuses on experiencing the main gameplay loop, so the narrative is abbreviated and not included.
+					The edition will contain 10 levels you can choose from.
+					Beating Level 10 will get you to a victory screen before returning back to the main menu.
+				</p>
+				<h3>Credits:</h3>
+				<table>
+					<tr>
+						<td>Omar Alkharji</td>
+						<td>Main Producer/Gameplay Designer/Lead Art Director/Background Track Musician</td>
+					</tr>
+					<tr>
+						<td>Peyton Jones</td>
+						<td>Co-Gameplay Designer/Lead Programmer/Lead Technical Designer</td>
+					</tr>
+					<tr>
+						<td>Sean Osborne</td>
+						<td>Lead Level Designer/Production Assitant/Playtest Notetaker </td>
+					</tr>
+					<tr>
+						<td>Margarita Rodriguez</td>
+						<td>Background Concept Artist, UI Designer, SFX Designer</td>
+					</tr>
+					<tr>
+						<td>Adam Fuhrman</td>
+						<td>Additional Artist, Initial Concept Artist</td>
+					</tr>
+					<tr>
+						<td>Matthew Chen</td>
+						<td>External Programmer, UI Designer</td>
+					</tr>
+					<tr>
+						<td>Benjamin Quang</td>
+						<td>SFX Designer</td>
+					</tr>
+					<tr>
+						<td>Michelle Huang</td>
+						<td>Artist</td>
+					</tr>
+				</table>
+				<p>Game Engine: Godot 4</p>
+				<hr>
+				<h3>Links:</h3>
+				<a href="https://newone0.itch.io/escape-from-project-elevate-compact-edition" target="_blank" style="color: white;">Itch.io Page</a>
+				<h3>Download The Game:</h3>
+				<a href="../assets/projects/project-elevate/Group20-EFP ELEVATE Final Build.zip" download target="_blank" style="color: white" class="download-link">Download</a>
+				<ol>
+					<li>Download the zip file and extract the contents in another folder</li>
+					<li>Click on the executable</li>
+					<li>If windows blocks you from running the program, click “Run Anyway”</li>
+					<li>The Game should be up and running :D</li>
+					<li>Click “Play” to select a level!</li>
+				</ol>
+			</div>
+			<div class="right-images">
+				<img src="../assets/projects/project-elevate/img1.png" alt="Picture of Game">
+				<img src="../assets/projects/project-elevate/img2.png" alt="Picture of Game">
+				<img src="../assets/projects/project-elevate/img3.png" alt="Picture of Game">
+				<img src="../assets/projects/project-elevate/img4.png" alt="Picture of Game">
+				<img src="../assets/projects/project-elevate/img5.png" alt="Picture of Game">
+			</div>
+		</div>
 	</main>
+	<!--
 	<footer>
-		<p>Copyright © My Portfolio</p>
+		<p></p>
 	</footer>
+	-->
 </body>
 </html>

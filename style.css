@@ -1,27 +1,35 @@
 
 @font-face {
   font-family: Entanglement;
-  src: url(assets/Entanglement-rgpRB.ttf);
+  src: url(assets/fonts/Entanglement-rgpRB.ttf);
 }
 @font-face {
   font-family: AgeLast;
-  src: url(assets/Agelast-mLlAm.otf);
+  src: url(assets/fonts/Agelast-mLlAm.otf);
 }
 @font-face {
   font-family: CyberGraphRegular;
-  src: url(assets/CyberGraphRegular-JRDwE.ttf);
+  src: url(assets/fonts/CyberGraphRegular-JRDwE.ttf);
 }
 @font-face {
   font-family: CyberGraphLight;
-  src: url(assets/CyberGraphLight-VGRd0.ttf);
+  src: url(assets/fonts/CyberGraphLight-VGRd0.ttf);
 }
 @font-face {
   font-family: AstroSpace;
-  src: url(assets/AstroSpace-eZ2Bg.ttf);
+  src: url(assetsfonts//AstroSpace-eZ2Bg.ttf);
 }
 @font-face {
   font-family: SpaceShip;
-  src: url(assets/CfSpaceshipRegular-2d4e.ttf);
+  src: url(assets/fonts/CfSpaceshipRegular-2d4e.ttf);
+}
+@font-face {
+  font-family: PressStart2P;
+  src: url(assets/fonts/PressStart2P-vaV7.ttf);
+}
+@font-face {
+  font-family: PixeloidSans;
+  src: url(assets/fonts/PixeloidSans-mLxMm.ttf);
 }
 
 /* Set the default font family and size */
@@ -80,6 +88,7 @@ footer{
   margin-top: 2px;
   text-decoration: none;
   font-size: 17px;
+  font-family: AstroSpace;
 }
 
 /* Change the color of links on hover */
