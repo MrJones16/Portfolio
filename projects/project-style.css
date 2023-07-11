@@ -196,6 +196,10 @@ main h2 {
 .right-images{
   width: 40vw;
 }
+.right-images img{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 table{
   border-collapse: collapse;
 }
