@@ -240,13 +240,29 @@ form button:hover {
 }
   
 .project {
-  background-color: #fff;
+  background-color: #333;
   border-radius: 4px;
   box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 400px; /* Add this line to restrict the width */
+  max-width: 500px; /* Add this line to restrict the width */
   min-width: 200px;
   margin: 0 auto; /* Add this line to center the projects */
+}
+.project a{
+  
+}
+
+.BubbleLink{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: AstroSpace;
+  text-align: center;
+  width: max-content;
+}
+
+.project p{
+  background-color: #fff;
 }
 
 .project img {
@@ -255,6 +271,7 @@ form button:hover {
 }
 
 .project h3 {
+  text-align: center;
   margin: 0px;
   padding: 10px;
   background-color: #333;
@@ -314,4 +331,15 @@ form button:hover {
   align-self: center;
   align-content: center;
   gap: 20px;
+}
+
+.links-container{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+.links-container p{
+  max-height: 30px;
+  color: white;
 }
