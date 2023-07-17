@@ -248,9 +248,6 @@ form button:hover {
   min-width: 200px;
   margin: 0 auto; /* Add this line to center the projects */
 }
-.project a{
-  
-}
 
 .BubbleLink{
   background-color: #fff;
@@ -260,9 +257,12 @@ form button:hover {
   text-align: center;
   width: max-content;
 }
+.BubbleLink:hover{
+  background-color: #04AA6D;
+}
 
 .project p{
-  background-color: #fff;
+  background-color: #d1d1c8;
 }
 
 .project img {
