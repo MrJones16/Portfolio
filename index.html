@@ -9,6 +9,9 @@
 </head>
 <body>
 	<main id="Home">
+
+		<!------------TopNav------------>
+
 		<div class="topnav">
 			<!-- Centered link -->
 			<div class="topnav-centered">
@@ -26,29 +29,152 @@
 				<a href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank"><img src="assets/logos/linkedin.png" height="20px"></a>
 			  </div>
 		</div>
+
+		<!------------Header------------>
 		<header>
 			<section id="MyName" class="NameArea">
 				<h1>Peyton Jones</h1>
-				<h2 style="font-size: 35px;">Game Developer</h2>
+				<h2 style="font-size: 25px;">Gameplay / Systems Programmer</h2>
 			</section>
 		</header>
-		<div class="about-container" id="about">
-			<div class="image">
-				<img src="assets/myself.png" alt="Picture of Peyton Jones">
-			</div>
-			<div class="text">
-				<h2 style="text-shadow: 3px 3px 0px rgba(0,50,0,0.3)">About Me</h2>
-				<p style="font-size: 20px;">
-					Hello! I am Peyton Jones, a graduate from the University of California Santa Cruz!
-					I have a Bachelor's Degree in Computer Science: Game Design, and it is my passion to develop and play a variety of games.
-					Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
-					My hobbies are raving, spending time with friends and family, and exploring media revolving around sci-fi, space, and magic!
-				</p>
+		
+		<!------------About------------>
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col1">
+						<img src="assets/myself.png" alt="Picture of Peyton Jones">
+					</div>
+					<div class="about-col2">
+						<h2>About Me</h2>
+						<p>
+							Hello! I am Peyton Jones, a Programmer and Game Designer.
+							I have a Bachelor's Degree in Computer Science: Game Design from the University of California Santa Cruz, and it is my passion to develop and play a variety of games.
+							Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
+							My hobbies are raving, spending time with friends and family, and exploring media revolving around sci-fi, space, and magic!
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<div class="about-list-vertical">
+								<div class="about-list-element-thin">
+									<h3>Game Scripting & Programming</h3>
+									<p>Experienced with Unity (C#), ground-up projects in SDL2 (C++), and learning Unreal 5 (C++ / Blueprint)</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>Optimization</h3>
+									<p>Using an IDE to debug and find performance bottlenecks, and utilizing multi-threading, chunk loading, ect</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>Engine Programming / Graphics</h3>
+									<p>Used SDL2 to create games and programs from scratch in C++, and have implemented basic graphics / shaders in a mini engine using linear algebra</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>3D Modelling & Animation</h3>
+									<p>Used Blender to texture, animate, and render spritesheets for a new character in Factorio, and modelled a pangolin</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>Interactive Audio Integration</h3>
+									<p>Experienced with Unity (C#), ground-up projects in SDL2 (C++) and learning Unreal 5 (C++ / Blueprint)</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>Procedural Generation</h3>
+									<p>Experimented using perlin noise to generate height maps for a planet, and used generated music to create traversable platforms</p>
+								</div>
+								<div class="about-list-element-thin">
+									<h3>Systems Design</h3>
+									<p>Creating core gameplay loops and systems and implementing prototypes in-engine.</p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents" id="experience">
+							<div class="about-list">
+								<div class="about-list-element">
+									<h3>University of California, Santa Cruz</h3>
+									<p>Reader / Grader</p> 
+									<sub><span>January 2023 - March 2023</span> </sub>
+									<ul>
+										<li>
+											Worked with faculty to critique and grade student’s projects
+											relating to game systems and interactions
+										</li>
+									</ul>
+								</div>
+								<div class="about-list-element">
+									<h3>Something Sweet</h3>
+									<p>Food Prep / Manager</p> 
+									<sub><span>2018 - 2019</span> </sub>
+									<ul>
+										<li>
+											Disassembled and cleaned frozen yogurt machines
+										</li>
+										<li>
+											Worked at the register and closed the register after closing
+										</li>
+										<li>
+											Opened and closed the store
+										</li>
+										<li>
+											Stocked new food shipments
+										</li>
+									</ul>
+								</div>
+								<div class="about-list-element">
+									<h3>Pizza Factory</h3>
+									<p>Food Prep / Cashier</p> 
+									<sub><span>2016 - 2018 & Summer 2022</span> </sub>
+									<ul>
+										<li>
+											Tossed, made, and cooked pizzas
+										</li>
+										<li>
+											Took orders at the register and over the phone
+										</li>
+										<li>
+											Stocked and prepared ingredients
+										</li>
+										<li>
+											Cleaned and closed the Restaurant
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents" id="education">
+							<div class="about-list-element">
+								<h3>University of California, Santa Cruz</h3>
+								<p>Bachelors of Computer Science: Computer Game Design<p>
+								<p>3.74 GPA, View Degree: <a href="Degree.pdf"><img src="assets/arrowfromsquare.webp" style="max-width: 20px;"></a></p> 
+								<sub><span>September 2019 - June 2023</span> </sub>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				}
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+
+		<!------------Projects------------>
+
 		<section id="projects" class="projects-container">
-			<h2 style="text-shadow: 3px 3px 0px rgba(0,50,0,0.3);">Projects</h2>
+			<h2 style="color: rgb(60, 60, 60); text-shadow: 3px 3px 0px hsla(0, 0%, 49%, 0.5)">Projects</h2>
 			<div class="projects">
 				<div class="project">
 					<h3 style="font-family: PressStart2P; line-height: 120%;">Escape From Project E.L.E.V.A.T.E.</h3>
@@ -230,6 +356,8 @@
 			</div>
 			<!-- Add more projects as necessary -->
 		</section>
+
+		<!------------Contact------------>
 
 		<section id="contact" class="contact-socials">
 			<h2>Contact Information and Socials</h2>
