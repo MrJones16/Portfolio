@@ -461,10 +461,11 @@ form button:hover {
   list-style:square;
 }
 .project li {
+  text-align: center;
   margin: 0px;
   padding: 5px;
   background-color: #333;
-  color: white;
+  color: rgb(195, 255, 171);
 
 }
 
