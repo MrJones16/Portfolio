@@ -522,7 +522,7 @@ form button:hover {
 }
 
 /* Hide the images by default */
-.SlidesPD, .SlidesFIF, .SlidesUE5{
+.SlidesPD, .SlidesFIF, .SlidesUE5, .SlidesFPC{
   display: none;
   
 }
