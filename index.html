@@ -176,6 +176,45 @@
 			<h2 style="color: rgb(60, 60, 60); text-shadow: 3px 3px 0px hsla(0, 0%, 49%, 0.5)">Projects</h2>
 			<div class="projects">
 				<div class="project">
+					<h3>Pyxis Game Engine</h3>
+					<div class="slideshow-container">
+						<!-- Full-width images with number and caption text -->
+						<div class="SlidesPyxis fade">
+						  <div class="numbertext"></div>
+						  <img src="assets/projects/PyxisGameEngine/Editor.png" style="height: 250px;">
+						  <div class="captiontext">Editor</div>
+						</div>
+					  
+						<div class="SlidesPyxis fade">
+						  <div class="numbertext">2 / 2</div>
+						  <img src="assets/projects/PyxisGameEngine/prevOpenGLWork.png" style="height: 250px;">
+						  <div class="captiontext">Previous OpenGL Work</div>
+						</div>
+					  
+						<!-- Next and previous buttons -->
+						<a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+					</div>
+					<p>My most recent side project: a game engine made in C++!
+						I hope to create a 2D game engine that is pixel art themed, like Aseprite is.
+						I currently have a Logging system using spdlog, and Event system, Window and Layers system,
+						ImGui for rendering, and I am currently working on abstracting rendering into my own API
+						so that the engine can use different Renderer API's than just OpenGL, like DirectX12.
+						To learn how to make this engine, I've been following tutorials from The Cherno on youtube!
+						If you are interested, I have more information about what it uses and what I've learned on the github.
+						Just click the link below!
+					</p>
+					<h4>Skills:</h4>
+					<ul>
+						<li>C++</li>
+						<li>Engine Programming</li>
+						<li>Graphics Programming / GLSL</li>
+					</ul>
+					<h4>Links: 
+						<a href="https://github.com/MrJones16/PyxisEngine" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to Game Engine github"></a>
+					</h4>
+				</div>
+				<div class="project">
 					<h3>Escape From Project E.L.E.V.A.T.E.</h3>
 					<img src="assets/projects/project-elevate/Background.png" alt="Escape From Project ELEVATE Image">
 					<p>Escape From Project E.L.E.V.A.T.E." is a prototype that I worked on where I was a Co-Gameplay Designer, and Lead Programmer. The game was created during CMPM 172, Spring Class of 2023 at the University Of California Santa Cruz. It is part of the 170 Senior Capstone Series for the AGPM/CSGD Major.</p>
@@ -186,20 +225,6 @@
 						<li>Godot</li>
 					</ul>
 					<a href="projects/project-elevate.html" style="display: grid; justify-content: center;"><p class="BubbleLink">Read More!</p></a>
-				</div>
-				<div class="project">
-					<h3>My Own Game Engine</h3>
-					<a><img src="assets/projects/2DGameEngine/enginephoto.png" alt="Picture of cubes and backpack rendered in the game engine"></a>
-					<p>My most recent side project: a game engine made in C++! I hope to create a 2D game engine that is pixel art themed, like Aseprite is. I currently have basic Phong lighting, 3D model / asset loading, camera movement, and more! I am using OpenGL, GLFW(OpenGL Framework), ASSIMP(Asset Importer), and other things like stb_image for loading textures.</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>C++</li>
-						<li>Engine Programming</li>
-						<li>Graphics Programming / GLSL</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/2DGameEngine" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to Game Engine github"></a>
-					</h4>
 				</div>
 				<div class="project">
 					<h3>Falling Sand Simulation</h3>
@@ -472,13 +497,14 @@
 	-->
 </body>
 <script>
-let slideIndex = [0,0,0,0];
+let slideIndex = [0,0,0,0,0];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["SlidesPD", "SlidesFIF", "SlidesUE5", "SlidesFPC"]
+let slideId = ["SlidesPD", "SlidesFIF", "SlidesUE5", "SlidesFPC", "SlidesPyxis"]
 showSlides(0, 0);
 showSlides(0, 1);
 showSlides(0, 2);
 showSlides(0, 3);
+showSlides(0, 4);
 
 function plusSlides(n, id) {
   slideIndex[id] += n;
