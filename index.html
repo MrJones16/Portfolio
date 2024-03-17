@@ -1,528 +1,403 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Peyton Jones | Game Developer</title>
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peyton | Game Dev</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nova+Oval&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&display=swap" rel="stylesheet">
+
 </head>
-<body>
-	<main id="Home">
+<body class="bg-dark bg-gradient">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-secondary border-top-0 border-start-0 border-end-0 sticky-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand fs-5" href="#">Peyton Jones | Programmer & Game Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<!------------TopNav------------>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Resume - Peyton Jones.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+            <ul class="dropdown-menu dropdown-center bg-dark border-secondary">
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="https://github.com/MrJones16" target="_blank">
+                <img src="assets/logos/github.png" height="20px">
+                GitHub
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="mailto:peytonjamesjones@gmail.com" target="_blank">
+                <img src="assets/logos/gmaillogo.png" height="20px">
+                PeytonJamesJones@gmail.com
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank">
+                <img src="assets/logos/linkedin.png" height="20px">
+                LinkedIn
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li>
+                <a class="icon-link link-light link-offset-2 link-underline-opacity-0 ps-1 pe-1">
+                <img src="assets/logos/discordlogo.png" height="20px">
+                mrjones16
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<div class="topnav">
-			<!-- Centered link -->
-			<div class="topnav-centered">
-				<a href="#Home" class="active">Home</a>
-			  </div>
-			
-			  <!-- Left-aligned links (default) -->
-			  <a href="#about">About</a>
-			  <a href="#projects">Projects</a>
-			  <a href="#contact">Contact</a>
-			  <a href="Resume - Peyton Jones.pdf" target="_blank">Resume</a>
-			  <!-- Right-aligned links -->
-			  <div class="topnav-right">
-				<a href="mailto:peytonjamesjones@gmail.com" target="_blank"><img src="assets/logos/gmaillogo.png" height="20px"></a>
-				<a href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank"><img src="assets/logos/linkedin.png" height="20px"></a>
-			  </div>
-		</div>
+  <!-- Intro Section -->
+  <!-- <header class="col-12" style="background-color: black;">
+    <section id="MyName" class="header-section text-center">
+      <h1>Peyton Jones</h1>
+      <h2">Gameplay / Systems Programmer</h2>
+    </section>
+  </header> -->
 
-		<!------------Header------------>
-		<header>
-			<section id="MyName" class="NameArea">
-				<h1>Peyton Jones</h1>
-				<h2 style="font-size: 25px;">Gameplay / Systems Programmer</h2>
-			</section>
-		</header>
-		
-		<!------------About------------>
-		<div id="about">
-			<div class="container">
-				<div class="row">
-					<div class="about-col1">
-						<img src="assets/myself.png" alt="Picture of Peyton Jones">
-					</div>
-					<div class="about-col2">
-						<h2>About Me</h2>
-						<p>
-							Hello! I am Peyton Jones, a Programmer and Game Designer.
-							I have a Bachelor's Degree in Computer Science: Game Design from the University of California Santa Cruz, and it is my passion to develop and play a variety of games.
-							Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
-							My hobbies are raving, spending time with friends and family, and exploring media revolving around sci-fi, space, and magic!
-						</p>
-						<div class="tab-titles">
-							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-							<p class="tab-links" onclick="opentab('experience')">Work Experience</p>
-							<p class="tab-links" onclick="opentab('education')">Education</p>
-						</div>
-						<div class="tab-contents active-tab" id="skills">
-							<div class="about-list-vertical">
-								<div class="about-list-element-thin">
-									<h3>Game Scripting & Programming</h3>
-									<p>Experienced with Unity (C#), ground-up projects in SDL2 (C++), and learning Unreal 5 (C++ / Blueprint)</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>Optimization</h3>
-									<p>Using an IDE to debug and find performance bottlenecks, and utilizing multi-threading, chunk loading, ect</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>Engine Programming / Graphics</h3>
-									<p>Experience using SDL2 to create games from scratch, and following many tutorials on OpenGL and game engine development, created a basic game engine from scratch in C++!</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>3D Modelling & Animation</h3>
-									<p>Used Blender to texture, animate, and render spritesheets for a new character in Factorio, and 3d modelled a pangolin!</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>Interactive Audio Integration</h3>
-									<p>Used Pure Data and FMOD to create and implement generative / interactive audio in Unity</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>Procedural Generation</h3>
-									<p>Experimented using perlin noise to generate procedural terrain, Worley/Voronoi noise for biome generation, and used real-time generated music to create traversable platforms</p>
-								</div>
-								<div class="about-list-element-thin">
-									<h3>Systems Design</h3>
-									<p>Creating core gameplay loops and systems and implementing prototypes in Engines like Unity, Unreal, Godot, and more!.</p>
-								</div>
-							</div>
-						</div>
-						<div class="tab-contents" id="experience">
-							<div class="about-list">
-								<div class="about-list-element">
-									<h3>University of California, Santa Cruz</h3>
-									<p>Reader / Grader</p> 
-									<sub><span>January 2023 - March 2023</span> </sub>
-									<ul>
-										<li>
-											Worked with faculty to critique and grade student’s projects
-											relating to game systems and interactions
-										</li>
-									</ul>
-								</div>
-								<div class="about-list-element">
-									<h3>Something Sweet</h3>
-									<p>Food Prep / Manager</p> 
-									<sub><span>2018 - 2019</span> </sub>
-									<ul>
-										<li>
-											Disassembled and cleaned frozen yogurt machines
-										</li>
-										<li>
-											Worked at the register and closed the register after closing
-										</li>
-										<li>
-											Opened and closed the store
-										</li>
-										<li>
-											Stocked new food shipments
-										</li>
-									</ul>
-								</div>
-								<div class="about-list-element">
-									<h3>Pizza Factory</h3>
-									<p>Food Prep / Cashier</p> 
-									<sub><span>2016 - 2018 & Summer 2022</span> </sub>
-									<ul>
-										<li>
-											Tossed, made, and cooked pizzas
-										</li>
-										<li>
-											Took orders at the register and over the phone
-										</li>
-										<li>
-											Stocked and prepared ingredients
-										</li>
-										<li>
-											Cleaned and closed the Restaurant
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="tab-contents" id="education">
-							<div class="about-list-element">
-								<h3>University of California, Santa Cruz</h3>
+  <!-- About Section -->
+  <div id = "About-Me" class="container col-xxl-8 px-4 py-5">
+    <!-- <h1 class="display-1 text-center mb-0 fw-bold lh-1 text-white col-4 border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto">About Me</h1>
+    <hr class="border mt-0"> -->
+    <div class="row flex-lg-row align-items-center g-5 py-5  text-white">
+      <div class="col-7 col-sm-7 col-lg-4">
+        <img src="assets/myself.png" class="d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-7 col-sm-5 col-lg-8 text-center barlow-regular">
+        
+        <h4 class="fw-light lh-1 mb-0 text-white">Hello, I'm </h4>
+        <h1 class="display-3 fw-bold lh-1 mb-3 text-white">Peyton Jones</h1>
+        <h2 class="display-6 fw-bold lh-1 mb-3 text-success-light">Programmer & Game Designer</h2>
+        <p class="lead">I have a Bachelor's Degree in Computer Science: Game Design from the University of California Santa Cruz, and it is my passion to develop and play a variety of games.
+          Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
+          My hobbies are raving, spending time with friends and family, and exploring media about sci-fi, space, and magic!
+        </p>
+
+        <div class="m-0 border-0">
+          <nav>
+            <div class="nav nav-tabs mb-3 text-success" id="nav-tab" role="tablist">
+              <button class="nav-link border active mx-auto" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">Education</button>
+              <button class="nav-link border mx-auto" id="nav-work-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-work-experience" type="button" role="tab" aria-controls="nav-work-experience" aria-selected="false" tabindex="-1">Work Experience</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+              <div class="container bg-secondary bg-gradient rounded-3 pb-2 pt-2">
+								<h3 class="text-warning">University of California, Santa Cruz</h3>
 								<p>Bachelors of Computer Science: Computer Game Design<p>
-								<p>3.74 GPA, View Degree: <a href="Degree.pdf"><img src="assets/arrowfromsquare.webp" style="max-width: 20px;"></a></p> 
+								<a href="Degree.pdf" class="text-decoration-underline text-white">3.74 GPA, View Degree: <a href="Degree.pdf"><img src="assets/arrowfromsquare.webp" style="max-width: 20px;"></a></p> 
 								<sub><span>September 2019 - June 2023</span> </sub>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
+            <div class="tab-pane fade" id="nav-work-experience" role="tabpanel" aria-labelledby="nav-work-experience-tab">
+              <div class="work-experience-item">
+                <h3 class="text-warning">University of California, Santa Cruz</h3>
+                <p class="mb-0">Reader / Grader</p> 
+                <sub><span>January 2023 - March 2023</span> </sub>
+                <ul class="text-start">
+                  <li>
+                    Worked with faculty to critique and grade student’s projects
+                    relating to game systems and interactions
+                  </li>
+                </ul>
+              </div>
+              <div class="about-list-element">
+                <h3 class="text-warning">Something Sweet</h3>
+                <p class="mb-0">Food Prep / Manager</p> 
+                <sub><span>2018 - 2019</span> </sub>
+                <ul class="text-start">
+                  <li>
+                    Disassembled and cleaned frozen yogurt machines
+                  </li>
+                  <li>
+                    Worked at the register and closed the register after closing
+                  </li>
+                  <li>
+                    Opened and closed the store
+                  </li>
+                  <li>
+                    Stocked new food shipments
+                  </li>
+                </ul>
+              </div>
+              <div class="about-list-element">
+                <h3 class="text-warning">Pizza Factory</h3>
+                <p class="mb-0">Food Prep / Cashier</p> 
+                <sub><span>2016 - 2018 & Summer 2022</span> </sub>
+                <ul class="text-start">
+                  <li>
+                    Tossed, made, and cooked pizzas
+                  </li>
+                  <li>
+                    Took orders at the register and over the phone
+                  </li>
+                  <li>
+                    Stocked and prepared ingredients
+                  </li>
+                  <li>
+                    Cleaned and closed the Restaurant
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
 
-		<script>
-			var tablinks = document.getElementsByClassName("tab-links");
-			var tabcontents = document.getElementsByClassName("tab-contents");
-			function opentab(tabname){
-				for(tablink of tablinks){
-					tablink.classList.remove("active-link");
-				}
-				for(tabcontent of tabcontents){
-					tabcontent.classList.remove("active-tab");
-				}
-				event.currentTarget.classList.add("active-link");
-				document.getElementById(tabname).classList.add("active-tab");
-			}
-		</script>
+  <!-- Skills -->
+  <div id = "Skills" class="container col-xxl-8 px-4 py-5">
+    <h1 class="display-1 barlow-regular text-center mb-0 fw-bold lh-1 text-white col-4 border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto">Skills</h1>
+    <hr class="border mt-0">
+  </div>
+  <!-- Skills Grid -->
+  <div class="album py-5">
+    <div class="container">
 
-		<!------------Projects------------>
-		<section id="projects" class="projects-container">
-			<h2 style="color: rgb(60, 60, 60); text-shadow: 3px 3px 0px hsla(0, 0%, 49%, 0.5)">Projects</h2>
-			<div class="projects">
-				<div class="project">
-					<h3>Pyxis Game Engine</h3>
-					<div class="slideshow-container">
-						<!-- Full-width images with number and caption text -->
-						<div class="SlidesPyxis fade">
-						  <div class="numbertext"></div>
-						  <img src="assets/projects/PyxisGameEngine/Editor.png" style="height: 250px;">
-						  <div class="captiontext">Editor</div>
-						</div>
-					  
-						<div class="SlidesPyxis fade">
-						  <div class="numbertext">2 / 2</div>
-						  <img src="assets/projects/PyxisGameEngine/prevOpenGLWork.png" style="height: 250px;">
-						  <div class="captiontext">Previous OpenGL Work</div>
-						</div>
-					  
-						<!-- Next and previous buttons -->
-						<a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-					</div>
-					<p>My most recent side project: a game engine made in C++!
-						I've been following tutorials from The Cherno's game engine series on youtube in order to learn game engine development.
-						I hope to create a 2D or Voxel game engine that is pixel art themed, like Aseprite is.
-						I currently have a Logging system using spdlog, an Event system, Window and Layers system,
-						ImGui for rendering, and I am currently working on abstracting rendering into my own API
-						so that the engine can use different Renderer API's than just OpenGL, like DirectX12.
-						If you are interested, I have more information about what it uses and what I've learned on the github.
-						Just click the link below!
-					</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>C++</li>
-						<li>Engine Programming</li>
-						<li>Graphics Programming / GLSL</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/PyxisEngine" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to Game Engine github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Escape From Project E.L.E.V.A.T.E.</h3>
-					<img src="assets/projects/project-elevate/Background.png" alt="Escape From Project ELEVATE Image">
-					<p>Escape From Project E.L.E.V.A.T.E." is a prototype that I worked on where I was a Co-Gameplay Designer, and Lead Programmer. The game was created during CMPM 172, Spring Class of 2023 at the University Of California Santa Cruz. It is part of the 170 Senior Capstone Series for the AGPM/CSGD Major.</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Gameplay Design</li>
-						<li>Gameplay Programming</li>
-						<li>Godot</li>
-					</ul>
-					<a href="projects/project-elevate.html" style="display: grid; justify-content: center;"><p class="BubbleLink">Read More!</p></a>
-				</div>
-				<div class="project">
-					<h3>Falling Sand Simulation</h3>
-					<a><img src="assets/projects/fallingsandsim/falling-sand.gif" alt="Gif of the Falling Sand Simulation Running"></a>
-					<p>This is one of my side projects. Using SDL2, a multimedia library that provides a low-level API for things like drawing to a window and keyboard inputs, I created a falling sand simulation inspired by NOITA.</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>C++</li>
-						<li>Data structures</li>
-						<li>Engine/Systems Programming</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/FallingSandProject" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to falling sand github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>2D Physics Engine</h3>
-					<a><img src="assets/projects/2dphysics/2DPhysicsCompressed.webp" alt="Gif of the Physics Engine drawing a cat with circles."></a>
-					<p> Inspired by <a href="https://www.youtube.com/watch?v=lS_qeBy3aQI&t=309s">Pezzza's work</a> on youtube, I used SDL2 to create a basic 2D physics engine, and used its deterministic features to draw my cat!</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>C++</li>
-						<li>Engine Programming</li>
-						<li>Multi-Threading</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/2D-Physics-Engine" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to 2D Physics github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Unreal Engine Combo System</h3>
-					<div class="slideshow-container">
-						<!-- Full-width images with number and caption text -->
-						<div class="SlidesUE5 fade">
-						  <div class="numbertext"></div>
-						  <img src="assets/projects/UE5Combo/ComboTree.png" style="height: 200px;">
-						  <div class="captiontext">Combo Tree</div>
-						</div>
-					  
-						<div class="SlidesUE5 fade">
-						  <div class="numbertext">2 / 3</div>
-						  <img src="assets/projects/UE5Combo/EventGraph.png" style="height: 200px;">
-						  <div class="captiontext">Event Graph</div>
-						</div>
-					  
-						<div class="SlidesUE5 fade">
-						  <div class="numbertext">3 / 3</div>
-						  <img src="assets/projects/UE5Combo/InGame.png" style="height: 200px;">
-						  <div class="captiontext">In Game</div>
-						</div>
-					  
-						<!-- Next and previous buttons -->
-						<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-					</div>
-					<p>I created a attack combo system inside of Unreal Engine 5 while testing for a game dev application. The system has a visual tree where you can connect different paths for the combos, and uses animation notifies to enable damage or change properties of movement while attacking!</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Unreal Engine 5</li>
-						<li>Blueprints</li>
-					</ul>
-					<h4>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Factorio Character Mod</h3>
-					<div class="slideshow-container">
-						<!-- Full-width images with number and caption text -->
-						<div class="SlidesFPC fade">
-						  <div class="numbertext"></div>
-						  <img src="assets/projects/FactorioProtogenCharacter/InGame.png" style="height: 200px;">
-						  <div class="captiontext">In Game</div>
-						</div>
-					  
-						<div class="SlidesFPC fade">
-						  <div class="numbertext">2 / 3</div>
-						  <img src="assets/projects/FactorioProtogenCharacter/Character.png" style="height: 200px;">
-						  <div class="captiontext">Character</div>
-						</div>
-					  
-						<div class="SlidesFPC fade">
-						  <div class="numbertext">3 / 3</div>
-						  <img src="assets/projects/FactorioProtogenCharacter/walk.gif" style="height: 200px;">
-						  <div class="captiontext">Walking Gif</div>
-						</div>
-					  
-						<!-- Next and previous buttons -->
-						<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-					</div>
-					<p>I created a Factorio custom character mod for a friend, implementing a protogen! I utilized Blender in order to texture, animate, and render the 3d model into spritesheets for the game.</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Blender</li>
-						<li>Texturing</li>
-						<li>Animation</li>
-						<li>Rendering</li>
-						<li>Sprite Sheets</li>
-						<li>Modding</li>
-					</ul>
-					<h4>Links:
-						<a href="https://mods.factorio.com/mod/ProtogenCharacter" target="_blank"><img src="assets/logos/Factorio.png" style="max-width: 30px;" alt="link to factorio mod page for my mod"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Future In Flames</h3>
-					<div class="slideshow-container">
-						<!-- Full-width images with number and caption text -->
-						<div class="SlidesFIF fade">
-						  <div class="numbertext"></div>
-						  <img src="assets/projects/FIF/banner.png" style="height: 200px;">
-						  <div class="captiontext"></div>
-						</div>
-					  
-						<div class="SlidesFIF fade">
-						  <div class="numbertext">2 / 3</div>
-						  <img src="assets/projects/FIF/FIF-Gameplay.png" style="height: 200px;">
-						  <div class="captiontext">Event</div>
-						</div>
-					  
-						<div class="SlidesFIF fade">
-						  <div class="numbertext">3 / 3</div>
-						  <img src="assets/projects/FIF/Divination.png" style="height: 200px;">
-						  <div class="captiontext">Divination Ritual</div>
-						</div>
-					  
-						<!-- Next and previous buttons -->
-						<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-					</div>
-					<p>
-						Made in a one week jam in CMPM170, Game Design Studio at UCSC, Future In Flames is a supernatural survival
-						game about being lost in the woods, with only a candle and a knack for predestination to guide you.
-						My role in the team was a Programmer. For my part in development, I programmed an event system which used pre-set dialogue, and a variable amount of options to pick for paths to take.
-						When a player picks a path, other game values can be changed with each choice of an event as a reaction (You found apples along the left path, +10 Food!) 
-						I also created the volumetric and post processing fog effects for the visual aspect of the game
-					</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Data structures/Systems</li>
-						<li>Unity</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://silmist.itch.io/future-in-flames" target="_blank"><img src="assets/logos/itchio.png" style="max-width: 30px;" alt="link to future In Flames Itch Page"></a>
-						<a href="https://github.com/MrJones16/CMPM170_Jam2" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to future In Flames Github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Push Fight To Talk</h3>
-					<a><img src="assets/projects/pftt/GameLogo.png" alt="Push Fight To Talk Logo"></a>
-					<p>
-						Another group jam game made for CMPM170 at UCSC. Push Fight To Talk is a prototype of a turn-based RPG where interacting with the environment around you is part of your turn.
-						My contributions to the game was the health system, the enemy/player fighting interactions, enemy pathfinding, and more!
-					</p>
-					<ul>
-						<li>Systems</li>
-						<li>Pathfinding</li>
-						<li>Unity</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://szhan253.itch.io/push-fight-to-talk" target="_blank"><img src="assets/logos/itchio.png" style="max-width: 30px;" alt="link to Push Fight To Talk Itch Page"></a>
-						<a href="https://github.com/MrJones16/CMPM170_Jam3_Group7" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to Push Fight To Talk Github"></a>
-						<a href="https://www.youtube.com/watch?v=XX94SGuGgxE" target="_blank"><img src="assets/logos/youtube.png" style="max-width: 30px;" alt="link to Push Fight To Talk Github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Music Is The Way</h3>
-					<a><img src="assets/projects/musicistheway/Gameplay.png" alt="Image of Colorful Platforms"></a>
-					<p>
-						Made for CMPM151, Generative Audio for Games, me and my team created an endless 3d platformer with procedurally generated audio is linked to the position of the platforms.
-						While traversing each level, you are able to toggle an instrument to allow you to jump to certain platforms.
-						As the teams programmer, I created the Unity scene, the movement, the platform placing, the FFT reactive bloom, and linked the Pure Data to the Unity Project.
-					</p>
-					<ul>
-						<li>Procedural Generation</li>
-						<li>Generative Audio</li>
-						<li>Unity</li>
-						<li>Pure Data</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/CMPM151-Final-Project" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to Push Fight To Talk Github"></a>
-						<a href="https://youtu.be/-6WOE7P5KYM" target="_blank"><img src="assets/logos/youtube.png" style="max-width: 30px;" alt="link to Push Fight To Talk Github"></a>
-					</h4>
-				</div>
-				<div class="project">
-					<h3>Planet Defender</h3>
-					<div class="slideshow-container">
-						<!-- Full-width images with number and caption text -->
-						<div class="SlidesPD fade">
-						  <div class="numbertext">1 / 3</div>
-						  <img src="assets/projects/PlanetDefender/PDGIF.gif" style="height: 200px;">
-						  <div class="captiontext">Unity Scene</div>
-						</div>
-					  
-						<div class="SlidesPD fade">
-						  <div class="numbertext">2 / 3</div>
-						  <img src="assets/projects/PlanetDefender/ExplosionsPatch.png" style="height: 200px;">
-						  <div class="captiontext" style="color: black;">Explosion Sound</div>
-						</div>
-					  
-						<div class="SlidesPD fade">
-						  <div class="numbertext">3 / 3</div>
-						  <img src="assets/projects/PlanetDefender/AsteroidPatch.png" style="height: 200px;">
-						  <div class="captiontext" style="color: black;">Asteroid Sound</div>
-						</div>
-					  
-						<!-- Next and previous buttons -->
-						<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-					</div>
-					<p>
-						Created for CMPM151, Generative Audio For Games, a few classmates and I created a 2d game where you defend Earth against meteors/asteroids.
-						Using Pure Data, we synthesize audio in real time for all of the sounds in the game!
-						My job on the team was to create the entire Unity project/scene and link Pure Data to the game.
-					</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Generative Audio</li>
-						<li>Unity</li>
-						<li>Pure Data</li>
-					</ul>
-				</div>
-				<div class="project">
-					<h3>Zombie Colosseum</h3>
-					<a target="_blank"><img src="assets/projects/zombiecolosseum/ZCBackGround.png" alt="Zombie Colosseum Image"></a>
-					<p>
-						The first group jam game made for CMPM170 at UCSC.
-						Zombie Colosseum was a group project where the goal was to make the audio for the game interactive.
-						Using FMOD and Unity, we created a survival game where the background music is reactive to how many kills you get while surviving.
-						I worked to help implement the FMOD audio functions into the game, as well as the gameplay programming like the monster spawning, moving, interactions, ect.
-					</p>
-					<h4>Skills:</h4>
-					<ul>
-						<li>Interactive Audio</li>
-						<li>Unity</li>
-						<li>FMOD</li>
-					</ul>
-					<h4>Links: 
-						<a href="https://github.com/MrJones16/CMPM170_Group19_Jam1" target="_blank"><img src="assets/logos/github.png" style="max-width: 30px;" alt="link to future In Flames Github"></a>
-					</h4>
-				</div>
-			</div>
-			<!-- Add more projects as necessary -->
-		</section>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center barlow-regular">
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Game Scripting & Programming</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Experienced with Unity (C#), ground-up projects in SDL2 (C++), and learning Unreal 5 (C++ / Blueprint)</p>
+            </div>
+          </div>
+        </div>
 
-		<!------------Contact------------>
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Engine Programming / Graphics</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Experience using SDL2 to create games from scratch, and following many tutorials on OpenGL and game engine development, created a basic game engine from scratch in C++!</p>
+            </div>
+          </div>
+        </div>
 
-		<section id="contact" class="contact-socials">
-			<h2>Contact Information and Socials</h2>
-			<div class="contact-container">
-				<div style="margin-top: 10px; text-align: center;">
-					<a href="mailto:peytonjamesjones@gmail.com"><img src="assets/logos/gmaillogo.png" width="30px"></a>
-					<a href="mailto:peytonjamesjones@gmail.com">peytonjamesjones@gmail.com</a><a>(Preferred)</a>
-				</div>
-				<div style="margin-top: 20px; text-align: center;">
-					<a href="https://www.linkedin.com/in/peyton-j-jones/"><img src="assets/logos/linkedin.png" width="30px"></a>
-					<a href="https://www.linkedin.com/in/peyton-j-jones/">linkedin.com/in/peyton-j-jones</a>
-				</div>
-				<div style="margin-top: 20px; text-align: center;">
-					<a><img src="assets/logos/discordlogo.png" width="30px"></a>
-					<a>mrjones16</a>
-				</div>
-			</div>
-		</section>
-	</main>
-	<!--
-	<footer>
-		<p></p>
-	</footer>
-	-->
-</body>
-<script>
-let slideIndex = [0,0,0,0,0];
-/* Class the members of each slideshow group with different CSS classes */
-let slideId = ["SlidesPD", "SlidesFIF", "SlidesUE5", "SlidesFPC", "SlidesPyxis"]
-showSlides(0, 0);
-showSlides(0, 1);
-showSlides(0, 2);
-showSlides(0, 3);
-showSlides(0, 4);
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Procedural Generation</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Experimented using perlin noise to generate procedural terrain, Worley/Voronoi noise for biome generation, and used real-time generated music to create traversable platforms</p>
+            </div>
+          </div>
+        </div>
 
-function plusSlides(n, id) {
-  slideIndex[id] += n;
-  showSlides(slideIndex[id], id);
-}
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Systems Design</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Creating core gameplay loops and systems and implementing prototypes in Engines like Unity, Unreal, Godot, and more!</p>
+            </div>
+          </div>
+        </div>
 
-function showSlides(n, id) {
-  let i;
-  //get all slides of id
-  let x = document.getElementsByClassName(slideId[id]);
-  //hide all of the slides of that id
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  if (n >= x.length) {slideIndex[id] = 0}
-  if (n < 0) {slideIndex[id] = x.length}
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Optimization</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Using an IDE to debug and find performance bottlenecks, and utilizing multi-threading, chunk loading, ect.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">3D Modelling & Animation</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Used Blender to texture, animate, and render spritesheets for a new character in Factorio, and 3d modelled a pangolin!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="card shadow-sm bg-dark">
+            <h1 class="text-success-light">Interactive Audio Integration</h1>
+            <hr class="border-white">
+            <div class="card-body fs-5">
+              <p class="card-text text-white">Used Pure Data and FMOD to create and implement generative / interactive audio in Unity</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Intro Message -->
+  <section class="mt-5 py-1 text-center container  text-light barlow-regular">
+    <div class="row py-lg-1 bg-secondary bg-gradient rounded-4">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-bold rounded-3">Game Dev Blog</h1>
+        <p class="lead">I occasionally write about systems I implement in my games, such as <span class="text-decoration-underline">Procedural Generation</span> using Worley and Perlin noise, <span class="text-decoration-underline">Worm</span> movement, 2D <span class="text-decoration-underline">Rope Physics</span>, and more!</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Check out the full blog!</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- 2 Blog Highlights -->
+  <div id = "blog-highlights" class="mx-auto blog-highlights row mb-2 pt-4 px-4 ">
+    <div class="col-md-5 mx-auto">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-secondary">Nov 12 2023</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 mx-auto">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-secondary">Nov 11 2023</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div id = "Projects" class="container col-xxl-8 px-4 py-5">
+    <h1 class="display-1 barlow-regular text-center mb-0 fw-bold lh-1 text-white col-4 border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto">Projects</h1>
+    <hr class="border mt-0">
+  </div>
+  <!-- Projects Album -->
+  <div class="album py-5 barlow-regular text-center">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col d-flex project-card">
+          <div class="card shadow-sm border-top-0 border-end-0 border-start-0 border-1">
+            <h1 class="bg-success-subtle fw-bold rounded-2 rounded-bottom-0 mb-0 py-1">Pyxis Game Engine</h1>
+            <img width="100%" height="225" alt="img-description" src="assets/projects/PyxisGameEngine/Editor.png">
+            <p class="fs-4 mb-0 bg-success-subtle">Skills:</p>
+            <ul class="list-group">
+              <li class="list-group-item text-primary">C++</li>
+              <li class="list-group-item text-primary">Engine Programming</li>
+              <li class="list-group-item text-primary">Graphics Programming / GLSL</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">
+                Learning to make a game engine in C++!
+                I've been following tutorials from The Cherno's game engine series on youtube in order to learn game engine development.
+                I hope to create a 2D or Voxel game engine that is pixel art themed, like Aseprite is.
+                I currently have a Logging system using spdlog, an Event system, Window and Layers system,
+                ImGui for rendering, and I am currently working on abstracting rendering into my own API
+                so that the engine can use different Renderer API's than just OpenGL, like DirectX12.
+                If you are interested, I have more information about what it uses and what I've learned on the github.
+                Just click the link below!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/MrJones16/PyxisEngine" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary"><img src="assets/logos/github.png" height="20px"> GitHub</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex project-card">
+          <div class="card shadow-sm border-top-0 border-end-0 border-start-0 border-1">
+            <h1 class="bg-success-subtle fw-bold rounded-2 rounded-bottom-0 mb-0 py-1">Escape From Project E.L.E.V.A.T.E.</h1>
+            <img width="100%" height="225" alt="img-description" src="assets/projects/project-elevate/Background.png">
+            <p class="fs-4 mb-0 bg-success-subtle">Skills:</p>
+            <ul class="list-group">
+              <li class="list-group-item text-primary">Gameplay Design</li>
+              <li class="list-group-item text-primary">Gameplay Programming</li>
+              <li class="list-group-item text-primary">Godot</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">
+                Escape From Project E.L.E.V.A.T.E." is a prototype that I worked on where I was a Co-Gameplay Designer, and Lead Programmer.
+                The game was created during CMPM 172, Spring Class of 2023 at the University Of California Santa Cruz. It is part of the 170 Senior Capstone Series for the AGPM/CSGD Major.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://kogetsuhatena.itch.io/escape-from-project-elevate-compact-edition" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary"><img src="assets/logos/itchio.png" height="20px"> Itch.io</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex project-card">
+          <div class="card shadow-sm border-top-0 border-end-0 border-start-0 border-1">
+            <h1 class="bg-success-subtle fw-bold rounded-2 rounded-bottom-0 mb-0 py-1">Falling Sand Simulation</h1>
+            <img width="100%" height="225" alt="img-description" src="assets/projects/fallingsandsim/falling-sand.gif">
+            <p class="fs-4 mb-0 bg-success-subtle">Skills:</p>
+            <ul class="list-group">
+              <li class="list-group-item text-primary">C++</li>
+              <li class="list-group-item text-primary">Data structures</li>
+              <li class="list-group-item text-primary">Engine/Systems Programming</li>
+            </ul>
+            <div class="card-body">
+              <p class="card-text">
+                This is one of my side projects.
+                Using SDL2, a multimedia library that provides a low-level API for things like drawing to a window and keyboard inputs,
+                I created a falling sand simulation inspired by NOITA.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/MrJones16/FallingSandProject" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary"><img src="assets/logos/github.png" height="20px"> GitHub</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   
-  x[slideIndex[id]].style.display = "block";
-}
-</script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>

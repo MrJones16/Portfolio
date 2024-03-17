@@ -1,0 +1,64 @@
+/* Custom Font Classes */
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.text-success-light{
+  color:#2fe362
+}
+.text-decoration-underline {
+      /* Adjustments to the underline style */
+      text-underline-offset: 0.2em; /* Adjust the offset */
+    }
+
+
+/* Navigation Bar Customization */
+.navbar-custom {
+  font-family: 'Kode Mono', monospace; 
+  
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #2fe362;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffffff; 
+}
+
+.Header-Text{
+  font-family: 'Kode Mono', monospace; 
+}
+
+
+.header-section {
+  background-image: url(assets/black-hole-green.png); /* Replace 'path_to_your_image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  color: white; /* Set text color to contrast with background */
+  text-align: center; /* Center align text */
+  align-items: center;
+  justify-content: center;
+}
+
+.work-experience-item ul{
+  list-style-position:inside;
+  text-align: center;
+}
+
+.work-experience-item li{
+  text-align: center;
+}
