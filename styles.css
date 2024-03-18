@@ -17,6 +17,10 @@
 .text-success-light{
   color:#2fe362
 }
+.kode-mono
+{
+  font-family: 'Kode Mono', monospace; 
+}
 .text-decoration-underline {
       /* Adjustments to the underline style */
       text-underline-offset: 0.2em; /* Adjust the offset */
@@ -27,6 +31,17 @@
 .navbar-custom {
   font-family: 'Kode Mono', monospace; 
   
+}
+
+.noise {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: .05;
 }
 
 .navbar-custom .navbar-brand,
@@ -61,4 +76,31 @@
 
 .work-experience-item li{
   text-align: center;
+}
+a {
+  color: #000;
+}
+
+.project-card
+{
+  color: #111;
+}
+
+.project-card:hover
+{
+  color: #0dcaf0;
+}
+
+.card-hover {
+  transition: all 0.5s ease; /* Add transition for smoother animation */
+  position: relative; /* Set position to relative */
+}
+
+.card-hover .card-content {
+  max-height: 225px; /* Set initial max height */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card-hover:hover .card-content {
+  max-height: 1000px; /* Set the desired max height on hover */
 }
