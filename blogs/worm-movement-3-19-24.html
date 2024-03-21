@@ -12,7 +12,7 @@
         if something collided with the worm, be it a spear or the player trying to select it. 
         To fix this, I added multiple Colider2d's to the worm, added segment colliders to each, and aligned their positions with each segment of the line2D.
     </p>
-    <img class = "img-fluid mx-auto d-block" src="../blogs/worm-movement/basic-worm.png">
+    <img class = "img-fluid mx-auto d-block" src="blogs/worm-movement/basic-worm.png">
     <p>
         The worm needed a head, so I added a sprite for it, and updated the rotation of the head sprite to line up 
         with the direction of the starting line2D point to the second point.
@@ -29,7 +29,7 @@
         </code>
     </pre>
    
-    <img class = "img-fluid mx-auto d-block" src="../blogs/worm-movement/worm-with-head.webp">
+    <img class = "img-fluid mx-auto d-block" src="blogs/worm-movement/worm-with-head.webp">
     <p>
         This worked, but I wanted the worm to feel more... wormy. So I started thinking of ways to make the 
         worm move like it should, and decided that I could make the the worm scrunch in the middle as it 
@@ -67,7 +67,7 @@
     <p>
         Now that I had a way of scrunching the worm, I just needed to do it over time. I raised the value to the power of sin(time) * scrunchStrength, and the result was pretty good after tweaking some variables!
     </p>
-    <img class = "img-fluid mx-auto d-block" src="../blogs/worm-movement/finished-worm.gif">
+    <img class = "img-fluid mx-auto d-block" src="blogs/worm-movement/finished-worm.gif">
     <p>Thanks for reading :p</p>
 
 
