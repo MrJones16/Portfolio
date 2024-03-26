@@ -51,62 +51,6 @@ footer{
   margin: 0px;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-  border-top: #04AA6D;
-  border-left-width: 16px;
-  border-right-width: 16px;
-  border-bottom-width: 0px;
-  border-top-width: 10px;
-  border-style:double;
-  position:fixed;
-  margin-top: 0px;
-  padding-top: 0px;
-  width:100%;
-  background-color: #000000;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  margin-top: 2px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: AstroSpace;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Centered section inside the top navigation */
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
-  margin-right: 20px;
-}
-
 .about-container {
   background-image: linear-gradient(#fff, #04AA6D);
   display: grid;
@@ -163,7 +107,7 @@ main {
 main h1 { /*Main Name*/
   font-family: CyberGraphRegular;
   color: #fff;
-  margin-top: -100px;
+  margin-top: -400px;
   text-align: center;
   font-size: 90px;
   text-shadow: 3px 3px 0px hsla(0, 0%, 100%, 0.5)

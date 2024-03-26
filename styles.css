@@ -27,37 +27,24 @@
     }
 
 
+
 /* Navigation Bar Customization */
 .navbar-custom {
   font-family: 'Kode Mono', monospace; 
   
 }
-
-.noise {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: .05;
-}
-
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
   color: #2fe362;
 }
-
 .navbar-custom .nav-link:hover {
   color: #ffffff; 
 }
 
+
 .Header-Text{
   font-family: 'Kode Mono', monospace; 
 }
-
-
 .header-section {
   background-image: url(assets/black-hole-green.png); /* Replace 'path_to_your_image.jpg' with the path to your image */
   background-size: cover;
@@ -68,39 +55,33 @@
   align-items: center;
   justify-content: center;
 }
-
 .work-experience-item ul{
   list-style-position:inside;
   text-align: center;
 }
-
 .work-experience-item li{
   text-align: center;
 }
-a {
-  color: #000;
+
+
+/* Project Cards */
+.project-card {
+  overflow: hidden;
+  position: relative;
 }
 
-.project-card
-{
-  color: #111;
+/* Card content */
+.project-card-content {
+  position: absolute;
+  max-height: 1000px;
+  top: -100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: #fff; /* Text color */
+  padding: 10px;
+  transition: top 0.3s ease-in-out; /* Smooth transition */
 }
 
-.project-card:hover
-{
-  color: #0dcaf0;
-}
-
-.card-hover {
-  transition: all 0.5s ease; /* Add transition for smoother animation */
-  position: relative; /* Set position to relative */
-}
-
-.card-hover .card-content {
-  max-height: 225px; /* Set initial max height */
-  overflow: hidden; /* Hide overflow content */
-}
-
-.card-hover:hover .card-content {
-  max-height: 1000px; /* Set the desired max height on hover */
+/* Card hover effect */
+.project-card:hover .project-card-content {
+  top: 0; /* Slide in the content */
 }
