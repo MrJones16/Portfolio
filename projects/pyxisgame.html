@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peyton | Game Dev</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nova+Oval&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-dark">
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-secondary border-top-0 border-start-0 border-end-0 sticky-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand fs-5" href="../index.html">Peyton | Programmer & Game Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-warning" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Resume - Peyton Jones.pdf" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark border-secondary">
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="https://github.com/MrJones16" target="_blank">
+                <img src="../assets/logos/github.png" height="20px">
+                GitHub
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="mailto:peytonjamesjones@gmail.com" target="_blank">
+                <img src="../assets/logos/gmaillogo.png" height="20px">
+                PeytonJamesJones@gmail.com
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li><a class="icon-link link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ps-1 pe-1" href="https://www.linkedin.com/in/peyton-j-jones/" target="_blank">
+                <img src="../assets/logos/linkedin.png" height="20px">
+                LinkedIn
+                </a>
+              </li>
+              <li><hr class="dropdown-divider border-secondary"></li>
+              <li>
+                <a class="icon-link link-light link-offset-2 link-underline-opacity-0 ps-1 pe-1">
+                <img src="../assets/logos/discordlogo.png" height="20px">
+                mrjones16
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
+
+  <main class="container barlow-regular text-white text-start col-lg-5">
+    <img src="../assets/projects/PyxisGame/Pyxis_Logo_Upscaled.png" alt="Logo for Pyxis, in pixel-art" width="100%">
+    <ul class="list-group list-group-horizontal ps-2 pe-2 mt-1 mb-1 flex-wrap rounded-0">
+      <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">C++</li>
+              <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Networking</li>
+              <li class="list-group-item py-0 bg-success-subtle align-items-center d-flex rounded-2 me-1 mb-1">Game Design</li>
+              <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Gameplay Programming</li>
+              <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">Data structures/Systems</li>
+    </ul>
+    <hr class="mt-0 mb-0">
+    <ul class="list-group list-group-horizontal mt-2 mb-3-">
+      <a href = "https://github.com/MrJones16/PyxisEngine/tree/main/Pixel-Game" target="_blank"><button type="button" class="btn btn-sm bg-dark-subtle btn-outline-secondary"><img src="../assets/logos/github.png" height="20px"> GitHub</button></a>
+    </ul>
+    
+    <h2 class="kode-mono text-success-light">About</h2>
+    <p>Pyxis is an "infinitely" large multiplayer falling sand game with Box2d physics and easy to create elements! </p>
+    <img src="../assets/projects/PyxisGame/PyxisGifWebp.webp" alt="gif of title as rigid bodies falling and then water poured on top" width="100%">
+    <p>
+      Like all my attempts at falling sand games, it is inspired by Noita. Pyxis is my best personal project, taking after my many attempts to make a falling sand game XD.
+    </p>
+    <p>
+      The multiplayer uses <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://think-async.com/Asio/" target="_blank">Asio</a>, which is now built into Pyxis Engine, after following tutorials from <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/@javidx9" target="_blank">javidx9, aka "OLC"</a>. Asio is  a "cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach."
+      The <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://factorio.com/blog" target="_blank">Factorio Blog</a> was also a huge help in programming the networking, as there were a lot of good blog posts describing in detail and with diagrams their methods on synchronizing multiple clients running a simulation!
+    </p>
+    <img src="../assets/projects/PyxisGame/PyxisMPWebp.webp" alt="gif of two clients running the game" width="100%">
+    <p>
+      The rigid bodies are a <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://box2d.org/" target="_blank">Box2D</a> integration, where I use a culmination of a marching squares algorithm to find the shape outline, a Douglas-Peucker algorithm to simplify the polygon, and triple-skewed rotation to preserve pixels when rotating.
+    </p>
+    <p>
+      Just like Pyxis Game Engine, the project uses <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/premake/premake-core" target="_blank">Premake 5</a> to build solution files, and currently has support for windows, but should be feasable to make Linux or Mac support using it.
+    </p>
+    <p>
+      In GDC 2019, there was a <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/watch?v=prXuyMCgbTc" target="_blank">session</a> held by Nolla Games' Petri Purho, who goes into great detail on the methods used in the Falling Everything Engine built for Noita. I used this as a guide when implementing various systems!
+    </p>
+    <h2 class="text-success-light">
+      What I've learned
+    </h2>
+    <p>I've learned a lot about:</p>
+    <h3 class="text-warning">Transforms / Algorithms</h3>
+    <div class="container d-flex">
+      <ul class="text-start mx-auto-off">
+          <li>Pixel Preserving Triple-Skew Rotation</li>
+          <li>Marching Squares</li>
+          <li>Douglas-Peucker</li>
+      </ul>
+    </div>
+    <h3 class="text-warning">Asio</h3>
+    <h3 class="text-warning">Multiplayer / Network Programming</h3>
+    <h3 class="text-warning">TCP / Sockets</h3>
+    <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
+    <!-- extra space -->
+    <div style="height: 150px;"></div>
+      
+      
+
+  </main>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
