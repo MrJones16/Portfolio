@@ -14,13 +14,15 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.kode-mono{
+  font-family: "Kode Mono", monospace;
+  font-style: normal;
+}
 .text-success-light{
   color:#2fe362
 }
-.kode-mono
-{
-  font-family: 'Kode Mono', monospace; 
-}
+
 .text-decoration-underline {
       /* Adjustments to the underline style */
       text-underline-offset: 0.2em; /* Adjust the offset */
