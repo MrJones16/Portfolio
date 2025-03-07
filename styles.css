@@ -20,7 +20,8 @@
   font-style: normal;
 } */
 .text-success-light{
-  color:#2fe362
+  color: var(--neon-green);
+  text-shadow: 0 0 5px rgba(47, 227, 98, 0.5);
 }
 
 .text-decoration-underline {
@@ -32,20 +33,40 @@
 
 /* Navigation Bar Customization */
 .navbar-custom {
-  font-family: 'Barlow Regular', monospace; 
-  
+  font-family: 'Barlow', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .nav-link {
-  color: #2fe362;
+  color: var(--neon-green);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--neon-green);
+  transition: width 0.3s ease;
+}
+.navbar-custom .nav-link:hover::after {
+  width: 100%;
 }
 .navbar-custom .nav-link:hover {
-  color: #ffffff; 
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.navbar-dark .navbar-toggler {
+  border: 2px solid var(--neon-green);
 }
 
 
 .Header-Text{
-  font-family: 'Kode Mono', monospace; 
+  font-family: 'Barlow', monospace; 
 }
 .header-section {
   background-image: url(assets/black-hole-green.png); /* Replace 'path_to_your_image.jpg' with the path to your image */
@@ -56,6 +77,17 @@
   text-align: center; /* Center align text */
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.8));
 }
 .work-experience-item ul{
   list-style-position:inside;
@@ -70,6 +102,7 @@
 .project-card {
   overflow: hidden;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 /* Card content */
@@ -86,4 +119,766 @@
 /* Card hover effect */
 .project-card:hover .project-card-content {
   top: 0; /* Slide in the content */
+}
+
+/* Neo-brutalist color palette */
+:root {
+  --neon-green: #2fe362;
+  --dark-bg: #121212;
+  --dark-card: #1a1a1a;
+  --accent-pink: #ff3864;
+  --accent-purple: #9772fb;
+  --accent-blue: #00d4ff;
+  --accent-yellow: #ffd60a;
+}
+
+/* Background patterns */
+body.bg-dark {
+  background-color: var(--dark-bg) !important;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(47, 227, 98, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 212, 255, 0.07) 0%, transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(151, 114, 251, 0.05) 0%, transparent 25%);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Grid overlay effect */
+body.bg-dark::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(18, 18, 18, 0) 95%, rgba(47, 227, 98, 0.1) 100%),
+                    linear-gradient(90deg, rgba(18, 18, 18, 0) 95%, rgba(47, 227, 98, 0.1) 100%);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Neo-brutalist card styling */
+.card {
+  border: 3px solid var(--neon-green) !important;
+  box-shadow: 8px 8px 0 rgba(47, 227, 98, 0.3) !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translate(-4px, -4px) !important;
+  box-shadow: 12px 12px 0 rgba(47, 227, 98, 0.4) !important;
+}
+
+.card-header {
+  border-bottom: 3px solid var(--neon-green) !important;
+  font-weight: bold !important;
+  background-color: var(--dark-card) !important;
+}
+
+.project-card img {
+  transition: all 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Project card tags */
+.list-group-item.bg-primary-subtle {
+  background-color: rgba(0, 123, 255, 0.3) !important;
+  border: 2px solid #007bff !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+.list-group-item.bg-info-subtle {
+  background-color: rgba(13, 202, 240, 0.3) !important;
+  border: 2px solid #0dcaf0 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+.list-group-item.bg-success-subtle {
+  background-color: rgba(25, 135, 84, 0.3) !important;
+  border: 2px solid #198754 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+.list-group-item.bg-warning-subtle {
+  background-color: rgba(255, 193, 7, 0.3) !important;
+  border: 2px solid #ffc107 !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+.list-group-item.bg-danger-subtle {
+  background-color: rgba(220, 53, 69, 0.3) !important;
+  border: 2px solid #dc3545 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Skills section styling */
+.progress {
+  height: 25px !important;
+  background-color: var(--dark-bg) !important;
+  border: 2px solid var(--neon-green) !important;
+  box-shadow: 4px 4px 0 rgba(47, 227, 98, 0.2) !important;
+}
+
+.progress-bar {
+  background-image: linear-gradient(to right, var(--neon-green), var(--accent-blue)) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.1) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    rgba(255, 255, 255, 0.1) 75%, 
+    transparent 75%, 
+    transparent);
+  background-size: 20px 20px;
+  animation: progress-animation 2s linear infinite;
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+/* Button styling */
+.btn-warning {
+  background-color: var(--neon-green) !important;
+  border: 3px solid #20a045 !important;
+  color: #000 !important;
+  font-weight: bold !important;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-warning:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.4) !important;
+  background-color: #35ff6d !important;
+}
+
+/* Glitch effect removed as requested */
+.display-1, .display-2, .display-3 {
+  position: relative; /* Keep the positioning for other styling */
+}
+
+/* Removed glitch effect ::before and ::after pseudo-elements */
+
+/* Removed glitch animation keyframes */
+
+/* Work experience item styling */
+.work-experience-item {
+  border-width: 3px !important;
+  margin-bottom: 15px !important;
+}
+
+.work-experience-item li {
+  text-align: center;
+  position: relative;
+  padding-left: 15px;
+}
+
+.work-experience-item li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--neon-green);
+}
+
+/* Tab styling */
+.nav-tabs .nav-link {
+  color: var(--neon-green) !important;
+  border: 2px solid var(--neon-green) !important;
+  margin-right: 5px;
+  border-bottom: none !important;
+  background-color: rgba(47, 227, 98, 0.1) !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--dark-card) !important;
+  color: white !important;
+  border-bottom-color: var(--dark-card) !important;
+}
+
+/* Blog section */
+.blog-highlights .card {
+  border: 3px solid var(--accent-blue) !important;
+  box-shadow: 8px 8px 0 rgba(0, 212, 255, 0.3) !important;
+}
+
+.blog-highlights .card:hover {
+  transform: translate(-4px, -4px) !important;
+  box-shadow: 12px 12px 0 rgba(0, 212, 255, 0.4) !important;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .card {
+    box-shadow: 5px 5px 0 rgba(47, 227, 98, 0.3) !important;
+  }
+  
+  .text-center-small {
+    text-align: center !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .half-width-sm {
+    width: 50% !important;
+  }
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: var(--dark-bg) !important;
+  border: 2px solid var(--neon-green) !important;
+  box-shadow: 5px 5px 0 rgba(47, 227, 98, 0.2) !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(47, 227, 98, 0.2) !important;
+}
+
+.dropdown-divider {
+  border-color: var(--neon-green) !important;
+  opacity: 0.5;
+}
+
+/* animated cursor */
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--neon-green);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--neon-green);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s;
+}
+
+/* Section headers and transitions */
+.section-header {
+  position: relative;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.section-header h1 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  margin-bottom: 0;
+}
+
+.section-header:hover h1 {
+  transform: translateY(-5px);
+}
+
+/* Projects section header */
+.projects-header {
+  overflow: visible;
+  background-color: #2a2a2a;
+}
+
+.projects-header h1 {
+  background-color: #2a2a2a;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--accent-blue);
+  border-left: 3px solid var(--accent-blue);
+  border-right: 3px solid var(--neon-green);
+  border-bottom: none;
+  box-shadow: 8px 8px 0 rgba(47, 227, 98, 0.3);
+}
+
+.projects-header::before {
+  content: "{ projects }";
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  right: 10%;
+  top: -15px;
+  background-color: var(--accent-blue);
+  color: var(--dark-bg);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  z-index: 3;
+}
+
+
+/* Skills section header */
+.skills-header {
+  overflow: visible;
+  background-color: var(--dark-bg);
+}
+
+.skills-header h1 {
+  background-color: var(--dark-bg);
+  border: 3px solid transparent;
+  border-top: 3px solid var(--accent-purple);
+  border-left: 3px solid var(--neon-green);
+  border-right: 3px solid var(--accent-purple);
+  border-bottom: none;
+  box-shadow: 8px 8px 0 rgba(151, 114, 251, 0.3);
+}
+
+.skills-header::before {
+  content: "[ skills ]";
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  left: 10%;
+  top: -15px;
+  background-color: var(--neon-green);
+  color: var(--dark-bg);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  z-index: 3;
+}
+
+
+/* Blog section header */
+.blog-header {
+  position: relative;
+  overflow: visible;
+  background-color: var(--dark-bg);
+}
+
+.blog-header h1 {
+  background-color: var(--dark-bg);
+  border: 3px solid transparent;
+  border-top: 3px solid var(--neon-green);
+  border-left: 3px solid var(--accent-pink);
+  border-right: 3px solid var(--accent-blue);
+  border-bottom: none;
+  box-shadow: 8px 8px 0 rgba(47, 227, 98, 0.3);
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--neon-green), var(--accent-pink), var(--accent-blue));
+}
+
+
+/* Digital circuit pattern for section transitions */
+.digital-circuit {
+  position: relative;
+  margin: 2rem 0;
+  height: 60px;
+  overflow: hidden;
+}
+
+.digital-circuit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--neon-green);
+  opacity: 0.5;
+}
+
+.digital-circuit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--neon-green);
+  opacity: 0.5;
+}
+
+.digital-node {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.digital-node-1 {
+  top: 50%;
+  left: 20%;
+}
+
+.digital-node-2 {
+  top: 50%;
+  left: 50%;
+}
+
+.digital-node-3 {
+  top: 50%;
+  left: 80%;
+}
+
+/* Tech-inspired background for projects section */
+.bg-tech-brutalism {
+  background-color: #2a2a2a; /* Slightly lighter than dark background */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Create diagonal arrow pattern background */
+.bg-tech-brutalism::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      45deg, 
+      transparent, 
+      transparent 20px, 
+      rgba(47, 227, 98, 0.15) 20px, 
+      rgba(47, 227, 98, 0.15) 40px
+    ),
+    repeating-linear-gradient(
+      -45deg, 
+      transparent, 
+      transparent 20px, 
+      rgba(0, 212, 255, 0.1) 20px, 
+      rgba(0, 212, 255, 0.1) 40px
+    );
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Neo-brutalist Education and Work Experience styles */
+.neo-tabs {
+  border-bottom: 3px solid var(--neon-green);
+  background-color: var(--dark-card);
+  padding: 5px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 4px 0 0 rgba(47, 227, 98, 0.3);
+}
+
+.glitch-hover {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glitch-hover:hover {
+  color: var(--accent-pink) !important;
+  text-shadow: 2px 2px 0 rgba(255, 56, 100, 0.5);
+  transform: translateY(-2px);
+}
+
+.glitch-hover:hover .glitch-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  top: 0;
+  color: var(--accent-blue);
+  background: var(--dark-card);
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch-animation 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+  0% {
+    clip: rect(44px, 9999px, 56px, 0);
+  }
+  5% {
+    clip: rect(20px, 9999px, 80px, 0);
+  }
+  10% {
+    clip: rect(42px, 9999px, 33px, 0);
+  }
+  15% {
+    clip: rect(79px, 9999px, 14px, 0);
+  }
+  20% {
+    clip: rect(0, 0, 0, 0);
+  }
+  100% {
+    clip: rect(0, 0, 0, 0);
+  }
+}
+
+.neo-brutalist-card {
+  background-color: var(--dark-card);
+  border: 3px solid var(--neon-green) !important;
+  box-shadow: 8px 8px 0 rgba(47, 227, 98, 0.3);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.neo-brutalist-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 rgba(47, 227, 98, 0.4);
+}
+
+.circuit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, transparent 95%, rgba(47, 227, 98, 0.15) 100%),
+    linear-gradient(to bottom, transparent 95%, rgba(47, 227, 98, 0.15) 100%);
+  background-size: 20px 20px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Education Card Styling */
+.edu-card {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.edu-card .glow-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(47, 227, 98, 0.3) 0%, transparent 70%);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.edu-card .card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.university-title {
+  color: var(--accent-yellow);
+  font-weight: bold;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.university-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-yellow);
+}
+
+.degree-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.degree-box {
+  margin: 15px 0;
+}
+
+.degree-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(0, 212, 255, 0.1);
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 2px solid var(--accent-blue);
+  text-decoration: none;
+  color: var(--accent-blue);
+  transition: all 0.3s ease;
+}
+
+.degree-link:hover {
+  background-color: rgba(0, 212, 255, 0.2);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.gpa {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.view-degree {
+  margin: 0 5px;
+}
+
+.arrow-icon {
+  max-width: 20px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.degree-link:hover .arrow-icon {
+  transform: translateX(3px);
+}
+
+.edu-date {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+/* Work Experience Styling */
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.work-experience-item {
+  padding: 20px;
+}
+
+.job-header {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.company {
+  color: var(--accent-yellow);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.position {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 3px;
+}
+
+.job-date {
+  display: inline-block;
+  background-color: rgba(0, 212, 255, 0.1);
+  color: var(--accent-blue);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-left: 3px solid var(--accent-blue);
+}
+
+.job-duties {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.job-duties li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.job-duties li:before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--neon-green);
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.job-duties li:hover {
+  opacity: 1;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .job-title {
+    flex-direction: column;
+  }
+  
+  .company, .position {
+    display: block;
+  }
+  
+  .neo-brutalist-card {
+    padding: 15px;
+  }
+}
+
+/* Skills section styling */
+.d-flex h4 {
+  color: rgb(185, 169, 255); /* Using the purple color for skill names */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.d-flex h4:hover {
+  transform: translateX(5px);
+  color: var(--accent-purple);
 }

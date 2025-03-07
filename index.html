@@ -12,7 +12,8 @@
   <!-- <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nova+Oval&family=Space+Mono&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&display=swap" rel="stylesheet">
-
+  <!-- Adding a tech-inspired monospace font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-dark">
 
@@ -30,7 +31,9 @@
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-secondary border-top-0 border-start-0 border-end-0 sticky-top navbar-custom">
     <div class="container">
-      <a class="navbar-brand fs-5" href="#">Peyton | Programmer & Game Dev</a>
+      <a class="navbar-brand fs-5" href="#">
+        <span class="text-success-light">&lt;</span>Peyton <span class="text-success-light">|</span> Programmer & Game Dev<span class="text-success-light">&gt;</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -92,115 +95,127 @@
   </header> -->
 
   <!-- About Section -->
-  <div id = "About-Me" class="container col-xxl-8 px-4 py-5">
-    <!-- <h1 class="display-1 text-center mb-0 fw-bold lh-1 text-white col-4 border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto">About Me</h1>
-    <hr class="border mt-0"> -->
-    <div class="row flex-lg-row align-items-center g-5 py-5  text-white">
-      <div class="col-12 col-sm-12  col-lg-4">
-        <img src="assets/myself.png" class="half-width-sm d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy">
+  <div id="About-Me" class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5 text-white">
+      <div class="col-12 col-sm-12 col-lg-4">
+        <div class="position-relative">
+          <img src="assets/myself.png" class="half-width-sm d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy">
+          <div class="position-absolute" style="bottom: -10px; right: -10px; width: 100%; height: 100%; border: 3px solid var(--accent-pink); border-radius: 3rem; z-index: -1;"></div>
+        </div>
       </div>
       <div class="col-12 col-sm-12 col-lg-8 text-center barlow-regular">
         
         <h4 class="fw-light lh-1 mb-0 text-white">Hello, I'm </h4>
-        <h1 class="display-3 fw-bold lh-1 mb-3 text-white">Peyton Jones</h1>
+        <h1 class="display-3 fw-bold lh-1 mb-3 text-white" data-text="Peyton Jones">Peyton Jones</h1>
         <h2 class="display-6 fw-bold lh-1 mb-3 text-success-light">Programmer & Game Designer</h2>
-        <p class="lead">I have a Bachelor's Degree in Computer Science: Game Design from the University of California Santa Cruz, and it is my passion to develop and play a variety of games.
-          Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
-          My hobbies are raving, spending time with friends and family, and exploring media about sci-fi, space, and magic!
-        </p>
+        <div class="position-relative d-inline-block">
+          <p class="lead">I have a Bachelor's Degree in Computer Science: Game Design from the University of California Santa Cruz, and it is my passion to develop and play a variety of games.
+            Ever since I got a computer as a kid, I have been fascinated with video games and computing, and it is something that me and my grandpa bonded with growing up.
+            My hobbies are raving, spending time with friends and family, and exploring media about sci-fi, space, and magic!
+          </p>
+          <div class="position-absolute d-none d-lg-block" style="top: 50%; right: -30px; transform: translateY(-50%);">
+            <div style="width: 20px; height: 20px; background-color: var(--neon-green); clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+          </div>
+        </div>
 
         <div class="m-0 border-0">
           <nav>
-            <div class="nav nav-tabs mb-3 text-info" id="nav-tab" role="tablist">
-              <button class="nav-link border active mx-auto" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">Education</button>
-              <button class="nav-link border mx-auto" id="nav-work-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-work-experience" type="button" role="tab" aria-controls="nav-work-experience" aria-selected="false" tabindex="-1">Work Experience</button>
+            <div class="nav nav-tabs mb-3 text-info neo-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link border active mx-auto" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="true">
+                Education
+              </button>
+              <button class="nav-link border mx-auto" id="nav-work-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-work-experience" type="button" role="tab" aria-controls="nav-work-experience" aria-selected="false" tabindex="-1">
+                Work Experience
+              </button>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade active show" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
-              <div class="container bg-secondary bg-gradient rounded-3 pb-2 pt-2 text-white">
-								<h3 class="text-warning">University of California, Santa Cruz</h3>
-								<p>Bachelors of Computer Science: Computer Game Design<p>
-								<a href="Degree.pdf" class="text-decoration-underline text-info">3.74 GPA, View Degree: <a href="Degree.pdf"><img class="" src="assets/arrowfromsquare.webp" style="max-width: 20px;"></a></p> 
-								<sub><span>September 2019 - June 2023</span> </sub>
-							</div>
+              <div class="container neo-brutalist-card edu-card">
+                <div class="circuit-overlay"></div>
+                <div class="glow-effect"></div>
+                <div class="card-content">
+                  <h3 class="university-title">University of California, Santa Cruz</h3>
+                  <div class="degree-box">
+                    <p class="degree-text">Bachelors of Computer Science: Computer Game Design</p>
+                    <div class="degree-details">
+                      <a href="Degree.pdf" class="degree-link">
+                        <span class="gpa">3.74 GPA</span> 
+                        <span class="view-degree">View Degree</span>
+                        <img class="arrow-icon" src="assets/arrowfromsquare.webp" alt="View">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="edu-date"><span>September 2019 - June 2023</span></div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane fade display-12" id="nav-work-experience" role="tabpanel" aria-labelledby="nav-work-experience-tab">
-              <div class="work-experience-item card lh-1 bg-secondary text-white mb-1">
-                <h4>
-                  <span class="text-warning">Pizza Factory</span> - 
-                  <span>Food Prep / Cashier / Pizza Maker</span>
-                </h4>
-                <span class="fs-5 text-info">Jan 2024 - Present</span>
-                <ul class="list-group mt-2 border-0">
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Toss, make, and cook pizzas
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Clean and closed the restaurant and registers at the end of the night, managing cash and orders.
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Take orders at the register and over the phone
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Stock and prepare ingredients
-                  </li>
-                </ul>
-              </div>
-              <div class="work-experience-item card lh-1 bg-secondary text-white mb-1">
-                <h4>
-                  <span class="text-warning">University of California, Santa Cruz</span> - 
-                  <span>Reader / Grader</span>
-                </h4>
-                <span class="fs-5 text-info">January 2023 - March 2023</span>
-                <ul class="list-group mt-2 border-0">
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Worked with faculty to critique and grade student’s projects
-											relating to game systems and interactions
-                  </li>
-                </ul>
-              </div>
-              <div class="work-experience-item card lh-1 bg-secondary text-white mb-1">
-                <h4>
-                  <span class="text-warning">Something Sweet</span> - 
-                  <span>Food Prep / Manager</span>
-                </h4>
-                <span class="fs-5 text-info">2018 - 2019</span>
-                <ul class="list-group mt-2 border-0">
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Disassembled and cleaned frozen yogurt machines
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Worked at the register and closed the register after closing
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Opened and closed the store
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Stocked new food shipments
-                  </li>
-                </ul>
-              </div>
-              <div class="work-experience-item card lh-1 bg-secondary text-white mb-1">
-                <h4>
-                  <span class="text-warning">Pizza Factory</span> - 
-                  <span>Food Prep / Cashier</span>
-                </h4>
-                <span class="fs-5 text-info">2016 - 2018 & Summer 2022</span>
-                <ul class="list-group mt-2 border-0">
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Tossed, made, and cooked pizzas
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Took orders at the register and over the phone
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Stocked and prepared ingredients
-                  </li>
-                  <li class="list-group-item py-1 bg-secondary border-0 text-white">
-                    Cleaned and closed the Restaurant
-                  </li>
-                </ul>
+            <div class="tab-pane fade" id="nav-work-experience" role="tabpanel" aria-labelledby="nav-work-experience-tab">
+              <div class="work-experience-container">
+                <div class="work-experience-item neo-brutalist-card">
+                  <div class="circuit-overlay"></div>
+                  <div class="job-header">
+                    <h4 class="job-title">
+                      <span class="company">Pizza Factory</span>
+                      <span class="position">Food Prep / Cashier / Pizza Maker</span>
+                    </h4>
+                    <span class="job-date">Jan 2024 - Present</span>
+                  </div>
+                  <ul class="job-duties">
+                    <li>Toss, make, and cook pizzas</li>
+                    <li>Clean and closed the restaurant and registers at the end of the night, managing cash and orders.</li>
+                    <li>Take orders at the register and over the phone</li>
+                    <li>Stock and prepare ingredients</li>
+                  </ul>
+                </div>
+                
+                <div class="work-experience-item neo-brutalist-card">
+                  <div class="circuit-overlay"></div>
+                  <div class="job-header">
+                    <h4 class="job-title">
+                      <span class="company">University of California, Santa Cruz</span>
+                      <span class="position">Reader / Grader</span>
+                    </h4>
+                    <span class="job-date">January 2023 - March 2023</span>
+                  </div>
+                  <ul class="job-duties">
+                    <li>Worked with faculty to critique and grade student's projects relating to game systems and interactions</li>
+                  </ul>
+                </div>
+                
+                <div class="work-experience-item neo-brutalist-card">
+                  <div class="circuit-overlay"></div>
+                  <div class="job-header">
+                    <h4 class="job-title">
+                      <span class="company">Something Sweet</span>
+                      <span class="position">Food Prep / Manager</span>
+                    </h4>
+                    <span class="job-date">2018 - 2019</span>
+                  </div>
+                  <ul class="job-duties">
+                    <li>Disassembled and cleaned frozen yogurt machines</li>
+                    <li>Worked at the register and closed the register after closing</li>
+                    <li>Opened and closed the store</li>
+                    <li>Stocked new food shipments</li>
+                  </ul>
+                </div>
+                
+                <div class="work-experience-item neo-brutalist-card">
+                  <div class="circuit-overlay"></div>
+                  <div class="job-header">
+                    <h4 class="job-title">
+                      <span class="company">Pizza Factory</span>
+                      <span class="position">Food Prep / Cashier</span>
+                    </h4>
+                    <span class="job-date">2016 - 2018 & Summer 2022</span>
+                  </div>
+                  <ul class="job-duties">
+                    <li>Tossed, made, and cooked pizzas</li>
+                    <li>Took orders at the register and over the phone</li>
+                    <li>Stocked and prepared ingredients</li>
+                    <li>Cleaned and closed the Restaurant</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -209,16 +224,24 @@
     </div>
   </div>
 
-  <!-- Projects -->
-  <div id = "Projects" class="container col-xxl-8 px-4 ">
-    <h1 class="display-1 barlow-regular text-center mb-0 pb-2 fw-bold lh-1 text-white col-8 border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto bg-secondary bg-gradient">Main Projects</h1>
+  <!-- Digital circuit divider between About and Projects -->
+  <!-- <div class="container col-xxl-8 px-4
+    <div class="digital-circuit">
+      <div class="digital-node digital-node-1"></div>
+      <div class="digital-node digital-node-2"></div>
+      <div class="digital-node digital-node-3"></div>
+    </div>
   </div>
+ -->
 
-  <!-- Projects Album -->
-
-  <div class="album pt-5 barlow-regular text-center bg-secondary ">
+  mb <!-- Projects -->
+  <div class="album pt-5 barlow-regular text-center bg-secondary">
     <div class="container">
-
+      <div id="Projects" class="container col-xxl-8 px-4 mb-4">
+        <div class="section-header projects-header">
+          <h1 class="display-1 barlow-regular text-center mb-0 pb-2 fw-bold lh-1 text-white col-8 mx-auto">Main Projects</h1>
+        </div>
+      </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <!-- Pyxis Game -->
         <div class="col-10 col-md-6 col-lg-4">
@@ -241,6 +264,7 @@
             </div>
           </div>
           <ul class="list-group list-group-horizontal mt-2">
+            <a target="_blank"><button type="button" class="btn btn-sm bg-dark-subtle btn-outline-secondary"><img src="assets/logos/steam.png" height="20px">Steam (in the future)</button></a>
             <a href = "https://github.com/MrJones16/PyxisEngine/tree/main/Pixel-Game" target="_blank"><button type="button" class="btn btn-sm bg-dark-subtle btn-outline-secondary"><img src="assets/logos/github.png" height="20px"> GitHub</button></a>
           </ul>
         </div>
@@ -359,31 +383,26 @@
         </div>
         
       </div>
-      <a href="projects.html" class="fs-2 btn btn-warning my-2 mt-5">View All Projects</a>
+      <a href="projects.html" class="fs-2 btn btn-warning my-2 mt- mb-4">View All Projects</a>
     </div>
 
-    <!-- Skills -->
-    <!-- Put in above section to make tab look-->
-    <div id = "Skills" class="container col-xxl-8 px-4 pt-5">
-      <h1 class="display-1 barlow-regular text-center mb-0 fw-bold lh-1 text-white col-4 bg-dark border border-secondary border-bottom-0 rounded-5 rounded-bottom-0 mx-auto">Skills</h1>
-    </div>
-
+    <!-- Digital circuit divider between Projects and Skills -->
+    <!-- <div class="container col-xxl-8 px-4 mt-5">
+      <div class="digital-circuit">
+        <div class="digital-node digital-node-1"></div>
+        <div class="digital-node digital-node-2"></div>
+        <div class="digital-node digital-node-3"></div>
+      </div>
+    </div> -->
   </div>
 
-  <!-- Projects horizontal scroll -->
-  <!-- <div class="py-5 barlow-regular text-center" id="Project-Scroll">
-    <div class="container-fluid bg-secondary bg-gradient">
-      <div class="d-flex row flex-nowrap overflow-auto g-4 pb-4 parent" onWheelOFF= "this.scrollLeft += event.deltaY; event.preventDefault();">
-        <div class="col-lg-2 col-1 d-flex"></div>
-
+  <!-- Skills -->
+  <div class="container col-12 col-sm-12 text-info barlow-regular bg-dark mt-4 fs-5">
+    <div id="Skills" class="container col-xxl-8 px-4 pt-3 mb-4">
+      <div class="section-header skills-header">
+        <h1 class="display-1 barlow-regular text-center mb-0 fw-bold lh-1 text-white col-4 mx-auto">Skills</h1>
       </div>
     </div>
-  </div> -->
-
- 
-
-  <!-- Skills With Bars -->
-  <div class="container col-12 col-sm-12 text-info barlow-regular bg-dark mt-4 fs-5">
 
     <!-- game scripting & programming  -->
     <div class="d-flex flex-sm-column flex-lg-row justify-content-center align-items-center">
@@ -471,20 +490,26 @@
   </div>
 
   <!-- Blog Intro Message -->
-  <section class="mt-5 py-1 text-center container  text-light barlow-regular">
-    <div class="row py-lg-1 color-secondary bg-gradient rounded-4">
+  <section class="mt-5 py-1 text-center container text-light barlow-regular">
+    <div id="Blog" class="container col-xxl-8 px-4 pt-3 mb-4">
+      <div class="section-header blog-header">
+        <h1 class="fw-bold display-2 rounded-3" data-text="Game Dev Blog">Game Dev Blog</h1>
+      </div>
+    </div>
+    <div class="row py-lg-1 color-secondary bg-gradient rounded-4 position-relative">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-bold display-2 rounded-3">Game Dev Blog</h1>
         <p class="lead">If I have free time (which I don't) I occasionally write about systems I implement in my games, such as Procedural Generation using Worley and Perlin noise, Worm movement, 2D Rope Physics, and more!</p>
         <p>
           <a href="blog.html" class="btn btn-warning my-2">Check out the full blog!</a>
         </p>
       </div>
+      <div class="position-absolute" style="top: -10px; right: 10px; width: 30px; height: 30px; background-color: var(--accent-pink);"></div>
+      <div class="position-absolute" style="bottom: -10px; left: 10px; width: 30px; height: 30px; background-color: var(--accent-blue);"></div>
     </div>
   </section>
   
   <!-- 2 Blog Highlights -->
-  <div id = "blog-highlights" class="mx-auto blog-highlights row mb-2 pt-4 px-4 ">
+  <div id="blog-highlights" class="mx-auto blog-highlights row mb-2 pt-4 px-4">
     <div class="col-md-5 mx-auto">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-light">
         <div class="col p-4 d-flex flex-column position-static">
@@ -564,6 +589,8 @@
   <!-- <script src="../worley-noise.js"></script>
   <script src="background.js"></script> -->
 
+  <!-- Include our custom JS file -->
+  <script src="neo-tech.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
