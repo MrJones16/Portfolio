@@ -32,7 +32,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-secondary border-top-0 border-start-0 border-end-0 sticky-top navbar-custom">
     <div class="container">
       <a class="navbar-brand fs-5" href="#">
-        <span class="text-success-light">&lt;</span>Peyton <span class="text-success-light">|</span> Programmer & Game Dev<span class="text-success-light">&gt;</span>
+        <span class="text-success-light">&lt;</span> Peyton <span class="text-success-light">|</span> Programmer & Game Dev <span class="text-success-light">&gt;</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -99,8 +99,8 @@
     <div class="row flex-lg-row align-items-center g-5 py-5 text-white">
       <div class="col-12 col-sm-12 col-lg-4">
         <div class="position-relative">
-          <img src="assets/myself.png" class="half-width-sm d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy">
-          <div class="position-absolute" style="bottom: -10px; right: -10px; width: 100%; height: 100%; border: 3px solid var(--accent-pink); border-radius: 3rem; z-index: -1;"></div>
+          <img src="assets/myself.png" class="half-width-sm d-block mx-lg-auto img-fluid rounded-5" alt="Bootstrap Themes" loading="lazy" style="bottom: -10px; right: -10px; width: 100%; height: 100%; border: 3px solid var(--accent-pink); border-radius: 3rem; z-index: -1;">
+          <!-- <div class="position-absolute" style="bottom: -10px; right: -10px; width: 100%; height: 100%; border: 3px solid var(--accent-pink); border-radius: 3rem; z-index: -1;"></div> -->
         </div>
       </div>
       <div class="col-12 col-sm-12 col-lg-8 text-center barlow-regular">
@@ -131,29 +131,33 @@
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade active show" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
-              <div class="container neo-brutalist-card edu-card">
-                <div class="circuit-overlay"></div>
-                <div class="glow-effect"></div>
-                <div class="card-content">
-                  <h3 class="university-title">University of California, Santa Cruz</h3>
-                  <div class="degree-box">
-                    <p class="degree-text">Bachelors of Computer Science: Computer Game Design</p>
-                    <div class="degree-details">
-                      <a href="Degree.pdf" class="degree-link">
-                        <span class="gpa">3.74 GPA</span> 
-                        <span class="view-degree">View Degree</span>
-                        <img class="arrow-icon" src="assets/arrowfromsquare.webp" alt="View">
-                      </a>
+              <div class="container">
+                <div class = "neo-brutalist-card edu-card">
+                  
+                
+                  <!-- <div class="circuit-overlay"></div> -->
+                  <!-- <div class="glow-effect"></div> -->
+                  <div class="card-content">
+                    <h3 class="university-title">University of California, Santa Cruz</h3>
+                    <div class="degree-box">
+                      <p class="degree-text">Bachelors of Computer Science: Computer Game Design</p>
+                      <div class="degree-details">
+                        <a href="Degree.pdf" class="degree-link">
+                          <span class="gpa">3.74 GPA | Summa Cum Laude</span> 
+                          <span class="view-degree">View Degree</span>
+                          <img class="arrow-icon" src="assets/arrowfromsquare.webp" alt="View">
+                        </a>
+                      </div>
                     </div>
+                    <div class="edu-date"><span>September 2019 - June 2023</span></div>
                   </div>
-                  <div class="edu-date"><span>September 2019 - June 2023</span></div>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade" id="nav-work-experience" role="tabpanel" aria-labelledby="nav-work-experience-tab">
               <div class="work-experience-container">
                 <div class="work-experience-item neo-brutalist-card">
-                  <div class="circuit-overlay"></div>
+                  <!-- <div class="circuit-overlay"></div> -->
                   <div class="job-header">
                     <h4 class="job-title">
                       <span class="company">Pizza Factory</span>
@@ -170,7 +174,7 @@
                 </div>
                 
                 <div class="work-experience-item neo-brutalist-card">
-                  <div class="circuit-overlay"></div>
+                  <!-- <div class="circuit-overlay"></div> -->
                   <div class="job-header">
                     <h4 class="job-title">
                       <span class="company">University of California, Santa Cruz</span>
@@ -184,7 +188,7 @@
                 </div>
                 
                 <div class="work-experience-item neo-brutalist-card">
-                  <div class="circuit-overlay"></div>
+                  <!-- <div class="circuit-overlay"></div> -->
                   <div class="job-header">
                     <h4 class="job-title">
                       <span class="company">Something Sweet</span>
@@ -201,7 +205,7 @@
                 </div>
                 
                 <div class="work-experience-item neo-brutalist-card">
-                  <div class="circuit-overlay"></div>
+                  <!-- <div class="circuit-overlay"></div> -->
                   <div class="job-header">
                     <h4 class="job-title">
                       <span class="company">Pizza Factory</span>
@@ -237,15 +241,13 @@
   mb <!-- Projects -->
   <div class="album pt-5 barlow-regular text-center bg-secondary">
     <div class="container">
-      <div id="Projects" class="container col-xxl-8 px-4 mb-4">
-        <div class="section-header projects-header">
-          <h1 class="display-1 barlow-regular text-center mb-0 pb-2 fw-bold lh-1 text-white col-8 mx-auto">Main Projects</h1>
-        </div>
+      <div id="Projects" class="section-header projects-header mb-5">
+        <h1 class="display-1 text-white fw-bold">Main Projects</h1>
       </div>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <!-- Pyxis Game -->
         <div class="col-10 col-md-6 col-lg-4">
-          <div class="project-card card border-2 border-warning bg-dark text-white" style="padding: 1px;">
+          <div class="project-card card border-2 shiny-card bg-dark text-white" style="padding: 1px;">
             <h3 class="card-header">Pyxis</h3>
             
             <div class="card-body" style="padding: 1px;">
@@ -383,7 +385,7 @@
         </div>
         
       </div>
-      <a href="projects.html" class="fs-2 btn btn-warning my-2 mt- mb-4">View All Projects</a>
+      <a href="projects.html" class="fs-2 btn btn-warning my-2 mt- mb-5">View All Projects</a>
     </div>
 
     <!-- Digital circuit divider between Projects and Skills -->
@@ -493,7 +495,7 @@
   <section class="mt-5 py-1 text-center container text-light barlow-regular">
     <div id="Blog" class="container col-xxl-8 px-4 pt-3 mb-4">
       <div class="section-header blog-header">
-        <h1 class="fw-bold display-2 rounded-3" data-text="Game Dev Blog">Game Dev Blog</h1>
+        <h1 class="fw-bold display-2" data-text="Game Dev Blog">Game Dev Blog</h1>
       </div>
     </div>
     <div class="row py-lg-1 color-secondary bg-gradient rounded-4 position-relative">
@@ -547,7 +549,7 @@
   </div>
   
   <!-- mouse click and drag horizontal project cards -->
-  <script>
+  <!-- <script>
     let mouseDown = false;
     let startX, scrollLeft;
     let scrollDist = 0;
@@ -583,7 +585,7 @@
           event.preventDefault();
       }
       });
-  </script>
+  </script> -->
 
   <!-- Background noise scripts -->
   <!-- <script src="../worley-noise.js"></script>

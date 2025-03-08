@@ -33,7 +33,7 @@
 
 /* Navigation Bar Customization */
 .navbar-custom {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: sticky;
 }
@@ -66,7 +66,7 @@
 
 
 .Header-Text{
-  font-family: 'Barlow', monospace; 
+  font-family: 'JetBrains Mono', monospace;
 }
 .header-section {
   background-image: url(assets/black-hole-green.png); /* Replace 'path_to_your_image.jpg' with the path to your image */
@@ -100,9 +100,23 @@
 
 /* Project Cards */
 .project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid var(--neon-green) !important;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);margin-bottom: 20px;
   overflow: hidden;
-  position: relative;
-  transition: all 0.3s ease;
+  position: rel
+  ative;
+}
+
+.project-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.album.bg-secondary .project-card .card-header {
+  /* color: var(--accent-yellow); */
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--neon-green) !important;
 }
 
 /* Card content */
@@ -350,6 +364,15 @@ body.bg-dark::before {
   
   .half-width-sm {
     width: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Fix profile picture outline on mobile */
+  #About-Me .position-absolute {
+    width: 50% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 }
 
@@ -400,6 +423,9 @@ body.bg-dark::before {
   position: relative;
   margin-bottom: 0;
   z-index: 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .section-header h1 {
@@ -417,7 +443,7 @@ body.bg-dark::before {
 /* Projects section header */
 .projects-header {
   overflow: visible;
-  background-color: #2a2a2a;
+  /* background-color: #2a2a2a; */
 }
 
 .projects-header h1 {
@@ -430,7 +456,7 @@ body.bg-dark::before {
   box-shadow: 8px 8px 0 rgba(47, 227, 98, 0.3);
 }
 
-.projects-header::before {
+/* .projects-header::before {
   content: "{ projects }";
   position: absolute;
   font-family: 'JetBrains Mono', monospace;
@@ -442,13 +468,13 @@ body.bg-dark::before {
   font-weight: bold;
   padding: 0.2rem 0.5rem;
   z-index: 3;
-}
+} */
 
 
 /* Skills section header */
 .skills-header {
   overflow: visible;
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
 }
 
 .skills-header h1 {
@@ -461,7 +487,7 @@ body.bg-dark::before {
   box-shadow: 8px 8px 0 rgba(151, 114, 251, 0.3);
 }
 
-.skills-header::before {
+/* .skills-header::before {
   content: "[ skills ]";
   position: absolute;
   font-family: 'JetBrains Mono', monospace;
@@ -473,14 +499,14 @@ body.bg-dark::before {
   font-weight: bold;
   padding: 0.2rem 0.5rem;
   z-index: 3;
-}
+} */
 
 
 /* Blog section header */
 .blog-header {
   position: relative;
   overflow: visible;
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
 }
 
 .blog-header h1 {
@@ -503,7 +529,7 @@ body.bg-dark::before {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(to right, var(--neon-green), var(--accent-pink), var(--accent-blue));
+  /* background: linear-gradient(to right, var(--neon-green), var(--accent-pink), var(--accent-blue)); */
 }
 
 
@@ -691,6 +717,13 @@ body.bg-dark::before {
   padding: 30px;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Adding hover effect for education card */
+.edu-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 rgba(47, 227, 98, 0.4);
 }
 
 .edu-card .glow-effect {
@@ -881,4 +914,126 @@ body.bg-dark::before {
 .d-flex h4:hover {
   transform: translateX(5px);
   color: var(--accent-purple);
+}
+
+/* Projects section styling with diagonal pattern */
+.album.bg-secondary {
+  background-color: #aac48c !important; /* Bright pastel blue color */
+  position: relative;
+  overflow: hidden;
+}
+
+.album.bg-secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 2px,
+    transparent 2px,
+    transparent 15px
+  );
+  z-index: 1;
+}
+
+/* Animation removed
+@keyframes diagonalMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 300px;
+  }
+}
+*/
+
+.album.bg-secondary > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.album.bg-secondary .section-header h1,
+.album.bg-secondary .display-1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  
+}
+
+.album.bg-secondary .section-header h1::after,
+.album.bg-secondary .display-1::after {
+  display: none; /* Removing the underline effect */
+}
+
+/* Pyxis Game Project Card Special Styling */
+.shiny-card.project-card {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #ffd60a !important; /* Yellow border */
+  box-shadow: 0 0 15px rgba(255, 214, 10, 0.4) !important; /* Subtle glow */
+  transition: all 0.3s ease;
+}
+
+.shiny-card.project-card:hover {
+  transform: translate(-5px, -5px) !important;
+  box-shadow: 10px 10px 0 rgba(255, 214, 10, 0.5), 0 0 20px rgba(255, 214, 10, 0.6) !important;
+}
+
+/* Shine animation for Pyxis card border */
+.shiny-card.project-card::before {
+  content: "";
+  position: absolute;
+  top: -200%;
+  left: -200%;
+  width: 400%;
+  height: 400%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  animation: shine-effect 5s infinite linear;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes shine-effect {
+  0% {
+    top: -200%;
+    left: -200%;
+  }
+  100% {
+    top: 200%;
+    left: 200%;
+  }
+}
+
+/* Additional styling for Pyxis card */
+.shiny-card.project-card .card-header {
+  background: linear-gradient(to right, #1a1a1a, #3a2e00) !important;
+  color: #ffd60a !important;
+  border-bottom: 3px solid #ffd60a !important;
+  text-shadow: 0 0 8px rgba(255, 214, 10, 0.5);
+}
+
+.shiny-card.project-card img {
+  filter: drop-shadow(0 0 8px rgba(255, 214, 10, 0.3));
+  transition: all 0.5s ease;
+}
+
+.shiny-card.project-card:hover img {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 12px rgba(255, 214, 10, 0.5));
+}
+
+.shiny-card.project-card p {
+  position: relative;
+  z-index: 2;
 }

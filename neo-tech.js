@@ -1,43 +1,50 @@
 // Add custom cursor
 document.addEventListener('DOMContentLoaded', function() {
-  // Create cursor elements
-  const cursorDot = document.createElement('div');
-  cursorDot.classList.add('cursor-dot');
-  document.body.appendChild(cursorDot);
+  // Check if it's a mobile device (screen width less than 768px)
+  const isMobile = window.innerWidth < 768;
   
-  const cursorOutline = document.createElement('div');
-  cursorOutline.classList.add('cursor-outline');
-  document.body.appendChild(cursorOutline);
-  
-  // Update cursor position
-  document.addEventListener('mousemove', function(e) {
-    // Center the dot by offsetting by radius (width/2)
-    cursorDot.style.top = (e.clientY - 2.5) + 'px';
-    cursorDot.style.left = (e.clientX - 2.5) + 'px';
+  // Only create and show custom cursor on non-mobile devices
+  if (!isMobile) {
+    //Create cursor elements
+    const cursorDot = document.createElement('div');
+    cursorDot.classList.add('cursor-dot');
+    document.body.appendChild(cursorDot);
     
-    // Add a slight delay to the outline for a smoother effect
-    setTimeout(() => {
-      // Center the outline by offsetting by radius (width/2)
-      cursorOutline.style.top = (e.clientY - 15) + 'px';
-      cursorOutline.style.left = (e.clientX - 15) + 'px';
-    }, 50);
-  });
-  
-  // Hover effect for interactive elements
-  const interactiveElements = document.querySelectorAll('a, button, .card, .nav-link');
-  interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursorOutline.style.transform = 'scale(1.5)';
-      cursorOutline.style.border = '2px solid var(--accent-pink)';
-      cursorDot.style.backgroundColor = 'var(--accent-pink)';
+    const cursorOutline = document.createElement('div');
+    cursorOutline.classList.add('cursor-outline');
+    cursorOutline.style.transform = 'scale(0.8)';
+    document.body.appendChild(cursorOutline);
+    
+    // Update cursor position
+    document.addEventListener('mousemove', function(e) {
+      // Center the dot by offsetting by radius (width/2)
+      cursorDot.style.top = (e.clientY - 2.5) + 'px';
+      cursorDot.style.left = (e.clientX - 2.5) + 'px';
+      
+      // Add a slight delay to the outline for a smoother effect
+      setTimeout(() => {
+        // Center the outline by offsetting by radius (width/2)
+        cursorOutline.style.top = (e.clientY - 15) + 'px';
+        cursorOutline.style.left = (e.clientX - 15) + 'px';
+      }, 50);
     });
     
-    el.addEventListener('mouseleave', () => {
-      cursorOutline.style.transform = '';
-      cursorOutline.style.border = '2px solid var(--neon-green)';
-      cursorDot.style.backgroundColor = 'var(--neon-green)';
+    // Hover effect for interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .card, .nav-link');
+    interactiveElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorOutline.style.transform = '';
+        cursorOutline.style.border = '2px solid var(--accent-pink)';
+        cursorDot.style.backgroundColor = 'var(--accent-pink)';
+      });
+      
+      el.addEventListener('mouseleave', () => {
+        cursorOutline.style.transform = 'scale(0.8)';
+        cursorOutline.style.border = '2px solid var(--neon-green)';
+        cursorDot.style.backgroundColor = 'var(--neon-green)';
+      });
     });
-  });
+  }
   
   // Random tech-like animations for background
   createTechParticles();
