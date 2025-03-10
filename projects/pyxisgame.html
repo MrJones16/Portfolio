@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peyton | Game Dev</title>
+  <title>Peyton | Pyxis Game</title>
   <link rel="stylesheet" href="../styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anta&family=Micro+5&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body class="bg-dark">
 
@@ -73,65 +72,227 @@
       </div>
     </div>
   </nav>
-  <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
+  
+  <div class="container mt-2">
+    <a href="../projects.html" class="back-btn text-decoration-none">
+      ← BACK TO PROJECTS
+    </a>
+  </div>
 
   <main class="container barlow-regular text-white text-start col-lg-5">
-    <img src="../assets/projects/PyxisGame/Pyxis_Logo_Upscaled.png" alt="Logo for Pyxis, in pixel-art" width="100%">
-    <ul class="list-group list-group-horizontal ps-2 pe-2 mt-1 mb-1 flex-wrap rounded-0">
-      <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">C++</li>
-              <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Networking</li>
-              <li class="list-group-item py-0 bg-success-subtle align-items-center d-flex rounded-2 me-1 mb-1">Game Design</li>
-              <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Gameplay Programming</li>
-              <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">Data structures/Systems</li>
-    </ul>
-    <hr class="mt-0 mb-0">
-    <ul class="list-group list-group-horizontal mt-2 mb-3-">
-      <a href = "https://github.com/MrJones16/PyxisEngine/tree/main/Pixel-Game" target="_blank"><button type="button" class="btn btn-sm bg-dark-subtle btn-outline-secondary"><img src="../assets/logos/github.png" height="20px"> GitHub</button></a>
-    </ul>
     
-    <h2 class="barlow-regular text-success-light">About</h2>
-    <p>Pyxis is an "infinitely" large multiplayer falling sand game with Box2d physics and easy to create elements! </p>
-    <img src="../assets/projects/PyxisGame/PyxisGifWebp.webp" alt="gif of title as rigid bodies falling and then water poured on top" width="100%">
-    <p>
-      Like all my attempts at falling sand games, it is inspired by Noita. Pyxis is my best personal project, taking after my many attempts to make a falling sand game.
-    </p>
-    <p>
-      The multiplayer uses <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://think-async.com/Asio/" target="_blank">Asio</a>, which is now built into Pyxis Engine, after following tutorials from <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/@javidx9" target="_blank">javidx9, aka "OLC"</a>. Asio is  a "cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach."
-      The <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://factorio.com/blog" target="_blank">Factorio Blog</a> was also a huge help in programming the networking, as there were a lot of good blog posts describing in detail and with diagrams their methods on synchronizing multiple clients running a simulation!
-    </p>
-    <img src="../assets/projects/PyxisGame/PyxisMPWebp.webp" alt="gif of two clients running the game" width="100%">
-    <p>
-      The rigid bodies are a <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://box2d.org/" target="_blank">Box2D</a> integration, where I use a culmination of a marching squares algorithm to find the shape outline, a Douglas-Peucker algorithm to simplify the polygon, and triple-skewed rotation to preserve pixels when rotating.
-    </p>
-    <p>
-      Just like Pyxis Game Engine, the project uses <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/premake/premake-core" target="_blank">Premake 5</a> to build solution files, and currently has support for windows, but should be feasable to make Linux or Mac support using it.
-    </p>
-    <p>
-      In GDC 2019, there was a <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/watch?v=prXuyMCgbTc" target="_blank">session</a> held by Nolla Games' Petri Purho, who goes into great detail on the methods used in the Falling Everything Engine built for Noita. I used this as a guide when implementing various systems!
-    </p>
-    <h2 class="text-success-light">
-      What I've learned
-    </h2>
-    <p>I've learned a lot about:</p>
-    <h3 class="text-warning">Transforms / Algorithms</h3>
-    <div class="container d-flex">
-      <ul class="text-start mx-auto-off">
-          <li>Pixel Preserving Triple-Skew Rotation</li>
-          <li>Marching Squares</li>
-          <li>Douglas-Peucker</li>
-      </ul>
+    
+    <div class="border border-2 border-warning p-2 position-relative mb-4 neo-brutalist-card">
+      <img src="../assets/projects/PyxisGame/Pyxis_Logo_Upscaled.png" alt="Logo for Pyxis, in pixel-art" class="img-fluid">
+      <div class="position-absolute top-0 end-0 p-1">
+        <span class="badge bg-warning text-dark border border-dark">[PX_GAME]</span>
+      </div>
     </div>
-    <h3 class="text-warning">Asio</h3>
-    <h3 class="text-warning">Multiplayer / Network Programming</h3>
-    <h3 class="text-warning">TCP / Sockets</h3>
-    <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
-    <!-- extra space -->
-    <div style="height: 150px;"></div>
+    
+    <div class="tech-list">
+      <div class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">C++</div>
+      <div class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Networking</div>
+      <div class="list-group-item py-0 bg-success-subtle align-items-center d-flex rounded-2 me-1 mb-1">Game Design</div>
+      <div class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Gameplay Programming</div>
+      <div class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">Data structures/Systems</div>
+      <div class="list-group-item py-0 bg-warning-subtle align-items-center d-flex rounded-2 me-1 mb-1">Physics</div>
+      <div class="list-group-item py-0 bg-danger-subtle align-items-center d-flex rounded-2 me-1 mb-1">Simulation</div>
+    </div>
+    
+    <div class="d-flex gap-2 mt-2 mb-4 flex-wrap">
+      <a target="_blank" class="text-decoration-none">
+        <div class="border border-secondary p-2 d-flex align-items-center bg-secondary neo-brutalist-card">
+          <img src="../assets/logos/steam.png" height="20px" class="me-2">
+          <span class="text-light">Steam (Future)</span>
+        </div>
+      </a>
+      <a href="https://github.com/MrJones16/PyxisEngine/tree/main/Pyxis-Game" target="_blank" class="text-decoration-none">
+        <div class="border border-secondary p-2 d-flex align-items-center bg-secondary neo-brutalist-card">
+          <img src="../assets/logos/github.png" height="20px" class="me-2">
+          <span class="text-light">GitHub</span>
+        </div>
+      </a>
+      <a href="pyxisengine.html" class="text-decoration-none">
+        <div class="border border-success p-2 d-flex align-items-center neo-brutalist-card">
+          <i class="bi bi-gear-fill me-2 text-success"></i>
+          <span class="text-light">Engine</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="border border-info p-3 mb-4 font-monospace neo-brutalist-card">
+      <div class="d-flex align-items-center mb-2">
+        <i class="bi bi-terminal-fill text-info me-2"></i>
+        <span class="text-info">> GAME_INFO</span>
+      </div>
+      <p class="mb-1 ps-4">Multiplayer falling sand simulation written in C++</p>
+      <p class="mb-1 ps-4">Inspired by <a href="https://store.steampowered.com/app/881100/Noita/" target="_blank" class="text-info link-offset-2">Noita</a></p>
+      <p class="mb-0 ps-4">Built with my own game engine</p>
+    </div>
+    
+    <div class="border border-2 border-light position-relative mb-0">
+      <img src="../assets/projects/PyxisGame/PyxisGifWebp.webp" alt="gif of title as rigid bodies falling and then water poured on top" class="img-fluid">
+      <div class="position-absolute top-0 end-0 p-1">
+        <span class="badge bg-success text-dark border border-dark">[DEMO]</span>
+      </div>
+    </div>    
+    
+    <h2 class="text-warning border-bottom border-warning pb-1 mt-4">FEATURES</h2>
+    
+    <div class="row mb-4 g-3">
+      <div class="col-md-6">
+        <div class="border border-info h-100 overflow-hidden feature-card">
+          <div class="bg-info bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-people-fill me-2"></i>
+            <span>MULTIPLAYER</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>P2P gameplay using Steamworks API</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Connect via Steam Overlay</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>LAN and direct IP connection</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Synchronized simulation</li>
+          </ul>
+        </div>
+      </div>
       
+      <div class="col-md-6">
+        <div class="border border-success h-100 overflow-hidden feature-card">
+          <div class="bg-success bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-globe me-2"></i>
+            <span>WORLD & PHYSICS</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Theoretical infinite world generation</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Box2D rigid body physics</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Runtime deformable objects</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Chunk-based world management</li>
+          </ul>
+        </div>
+      </div>
       
+      <div class="col-md-6">
+        <div class="border border-warning h-100 overflow-hidden feature-card">
+          <div class="bg-warning bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-palette-fill me-2"></i>
+            <span>CUSTOMIZABLE</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>JSON-defined elements</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Custom reactions via JSON</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Custom nodes via inheritance</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="border border-danger h-100 overflow-hidden feature-card">
+          <div class="bg-danger bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-fire me-2"></i>
+            <span>SIMULATION</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Cellular automata element interactions</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Temperature & state changes</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Planned Multi-threaded computation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        
+    <div class="border border-primary mb-4 position-relative">
+      <div class="ratio ratio-16x9 border-bottom border-primary">
+        <img src="../assets/projects/PyxisGame/PyxisMPWebp.webp" alt="gif of two clients running the game" class="img-fluid object-fit-cover">
+      </div>
+      <div class="font-monospace p-2 bg-primary bg-opacity-25">
+        <code class="text-light">// Multiplayer demo showing two synchronized clients</code>
+      </div>
+    </div>    
+    
+    <div class="border border-danger mb-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-danger bg-opacity-10 border-bottom border-danger font-monospace">
+        <i class="bi bi-cup-hot-fill me-2"></i>
+        <span>FALLING SAND</span>
+      </div>
+      <div class="p-3">
+        <p>
+          Based on GDC 2019 <a class="text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/watch?v=prXuyMCgbTc" target="_blank">talk</a> by Nolla Games on Noita's Falling Everything Engine.
+        </p>
+        
+        <pre class="bg-dark text-light border border-secondary p-2 font-monospace"><code>// Core simulation components:
+- Cellular automata rules engine
+- JSON element definitions
+- Planned Multi-threaded update system
+- Box2D physics integration</code></pre>
+      </div>
+    </div>
+
+    <div class="border border-warning mb-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-warning bg-opacity-10 border-bottom border-warning font-monospace">
+        <i class="bi bi-boxes me-2"></i>
+        <span>PHYSICS PIPELINE</span>
+      </div>
+      <div class="p-3">
+        <p class="font-monospace mb-3 text-light"><span class="text-warning">#include</span> <<a class="text-info link-underline link-underline-opacity-0" href="https://box2d.org/" target="_blank">box2d/b2_world.h</a>></p>
+        <p>The Nolla Games GDC talk outlined a great method to integrating Box2D with a falling sand simulation:</p>
+        <p>Utilize a marching squares algorithm, followed by a Douglas-Peucker line simplification, and finally a triangulation algorithm.</p>
+        <p>In Pyxis, I use a triple-skew rotation to preserve the integrity of each pixel in a rigid body, and use this to calculate where the pixels should be placed in the simulation</p>
+        <p>For integrating it with the simulation, you take the rigid bodies out of the simulation, step the simulation once, and put them back in.</p>
+      </div>
+    </div>
+    
+    <h2 class="barlow-regular text-warning border-bottom border-warning pb-1 mt-5">TECH SKILLS++</h2>
+
+    <div class="row mt-3 mb-4">
+
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-bezier2 me-2"></i>ALGORITHMS</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Pixel Preserving Triple-Skew Rotation</li>
+            <li class="mb-1"><code class="text-success">→</code> Marching Squares Algorithm</li>
+            <li class="mb-1"><code class="text-success">→</code> Douglas-Peucker Optimization</li>
+            <li><code class="text-success">→</code> Delaunay Triangulation</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-globe-americas me-2"></i>NETWORKING</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Steamworks API</li>
+            <li class="mb-1"><code class="text-success">→</code> TCP/UDP Sockets</li>
+            <li><code class="text-success">→</code> Client-Server Sync</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-cpu-fill me-2"></i>OPTIMIZATION</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Planned Multi-threading</li>
+            <li class="mb-1"><code class="text-success">→</code> Visual Studio Performance Debugging</li>
+            <li class="mb-1"><code class="text-success">→</code> Data Compression</li>
+            <li><code class="text-success">→</code> Memory Management</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-tools me-2"></i>BUILD SYSTEMS</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> CMake</li>
+            <li class="mb-1"><code class="text-success">→</code> VCPKG Dependencies</li>
+            <li><code class="text-success">→</code> Cross-Platform Dev</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
 
   </main>
-  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="../neo-tech.js"></script>

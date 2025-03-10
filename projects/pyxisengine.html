@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peyton | Game Dev</title>
+  <title>Peyton | Pyxis Engine</title>
   <link rel="stylesheet" href="../styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,91 +73,331 @@
       </div>
     </div>
   </nav>
-  <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
+  
+  <div class="container mt-2">
+    <a href="../projects.html" class="back-btn text-decoration-none">
+      ← BACK TO PROJECTS
+    </a>
+  </div>
 
   <main class="container barlow-regular text-white text-start col-lg-5">
-    <h1 class="barlow-regular text-center">
-        Pyxis Game Engine
-      </h1>
-      <img src="../assets/projects/PyxisGameEngine/Editor.png" alt="Picture of basic engine editor" width="100%" heigh="225">
-      <ul class="list-group list-group-horizontal ps-2 pe-2 mt-1 mb-1 flex-wrap rounded-0">
-        <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">C++</li>
-        <li class="list-group-item py-0 bg-danger-subtle align-items-center d-flex rounded-2 me-1 mb-1">Engine Programming</li>
-        <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Graphics Programming</li>
-      </ul>
-      <hr class="mt-0 mb-0">
-      <ul class="list-group list-group-horizontal mt-2 mb-3-">
-        <a href = "https://github.com/MrJones16/PyxisEngine" target="_blank"><button type="button" class="btn btn-sm bg-dark-subtle btn-outline-secondary"><img src="../assets/logos/github.png" height="20px"> GitHub</button></a>
-      </ul>
+    <div class="project-page-header text-center">
+      <h1 class="display-4 fw-bold mono text-warning mb-0">PYXIS ENGINE</h1>
+    </div>
+    <div class="border border-2 border-danger p-2 position-relative mb-4">
+      <img src="../assets/projects/PyxisGameEngine/Editor.png" alt="Picture of basic engine editor" class="img-fluid">
+      <div class="position-absolute top-0 end-0 p-1">
+        <span class="badge bg-danger text-light border border-dark">[EARLY_ENGINE]</span>
+      </div>
+    </div>
+    
+    <div class="tech-list">
+      <li class="list-group-item py-0 bg-primary-subtle align-items-center d-flex rounded-2 me-1 mb-1">C++</li>
+      <li class="list-group-item py-0 bg-danger-subtle align-items-center d-flex rounded-2 me-1 mb-1">Engine Programming</li>
+      <li class="list-group-item py-0 bg-info-subtle align-items-center d-flex rounded-2 me-1 mb-1">Graphics Programming</li>
+      <li class="list-group-item py-0 bg-success-subtle align-items-center d-flex rounded-2 me-1 mb-1">OpenGL</li>
+      <li class="list-group-item py-0 bg-warning-subtle align-items-center d-flex rounded-2 me-1 mb-1">Box2D</li>
+    </div>
+    
+    <div class="d-flex gap-2 mt-2 mb-4">
+      <a href="https://github.com/MrJones16/PyxisEngine" target="_blank" class="text-decoration-none">
+        <div class="border border-secondary bg-secondary p-2 d-flex align-items-center neo-brutalist-card">
+          <img src="../assets/logos/github.png" height="20px" class="me-2">
+          <span class="text-light">GitHub</span>
+        </div>
+      </a>
+      <a href="pyxisgame.html" class="text-decoration-none">
+        <div class="border border-info p-2 d-flex align-items-center neo-brutalist-card">
+          <i class="bi bi-joystick me-2 text-info"></i>
+          <span class="text-light">Game</span>
+        </div>
+      </a>
+    </div>
+    
+    <div class="border border-success p-3 mb-4 font-monospace neo-brutalist-card">
+      <div class="d-flex align-items-center mb-2">
+        <i class="bi bi-terminal-fill text-success me-2"></i>
+        <span class="text-success">> ENGINE_INFO</span>
+      </div>
+      <p class="mb-1 ps-4">C++ game engine powering a multiplayer falling sand simulation</p>
+      <p class="mb-1 ps-4">Modular architecture with event-driven design</p>
+      <p class="mb-0 ps-4">Inspired by <a href="https://www.youtube.com/@TheCherno" target="_blank" class="text-success link-offset-2">TheCherno</a>'s Hazel engine</p>
+    </div>
+    
+    <div class="border border-secondary mb-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-secondary bg-opacity-10 border-bottom border-secondary font-monospace">
+        <i class="bi bi-diagram-3-fill me-2"></i>
+        <span>PROJECT_STRUCTURE</span>
+      </div>
+      <div class="p-3 font-monospace">
+        <pre class="bg-dark text-light border border-secondary p-2 mb-0"><code>├── Pyxis Engine (Main)
+│   └── Core game engine framework
+├── Pyxis Game
+│   └── Multiplayer falling sand simulation
+├── Pyxis Editor [OUTDATED]
+│   └── Visual editor for the engine
+└── Sandbox [OUTDATED]
+    └── Testing environment for features</code></pre>
+      </div>
+    </div>
+    
+    <h2 class="barlow-regular text-warning border-bottom border-warning pb-1 mt-4">CORE_FEATURES</h2>
+    
+    <div class="row mb-4 g-3">
+      <div class="col-md-6">
+        <div class="border border-primary h-100 overflow-hidden feature-card">
+          <div class="bg-primary bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-boxes me-2"></i>
+            <span>ARCHITECTURE</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Event-driven design system</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Node-based Inheritance framework</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Abstracted rendering pipeline</li>
+          </ul>
+        </div>
+      </div>
       
-      <h2 class="barlow-regular text-success-light">About</h2>
-      <p>A game engine written in C++ for learning purposes. The goal is to make an adorable 2D game engine engine with an aseprite-like theme.!</p>
-      <p>
-        This engine was made by following <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/@TheCherno" target="_blank">TheCherno</a>'s game engine series on Youtube, where he creates the Hazel game engine. For this reason, the code will be almost, if not exactly, the same as it is there.
-      </p>
-      <p>
-        The project uses <a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/premake/premake-core" target="_blank">Premake 5</a> to build solution files, and currently has support for windows, but should be feasable to make Linux or Mac support using it.
-      </p>
-      <p class="mt-2">
-        I currently have a Logging system using spdlog, an Event system, Window and Layers system,
-        ImGui for rendering, and I am currently working on abstracting rendering into my own API
-        so that the engine can use different Renderer API's than just OpenGL, like DirectX12.
-      </p>
-      <h3 class="text-success-light">
-        Currently Used Frameworks/Libraries/Software/ect.
-      </h3>
-      <div class="container d-flex">
-        <ul class="text-start mx-auto">
-            <li><a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/glfw/glfw" target="_blank">GLFW</a>  (GLFW is an Open Source, multi-platform library for OpenGL)</li>
-            <li><a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://glad.dav1d.de" target="_blank">GLAD</a>  (Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator)</li>
-            <li><a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/g-truc/glm" target="_blank">GLM</a> (GLM is an OpenGL based C++ mathematics library for graphics software)</li>
-            <li><a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/ocornut/imgui" target="_blank">ImGui</a>  (Dear ImGui is a bloat-free graphical user interface library for C++)</li>
-            <li><a class = "fw-bold text-info link-underline link-underline-opacity-0" href="https://github.com/gabime/spdlog" target="_blank">spdlog</a>  (Very fast, header-only/compiled, C++ logging library.)</li>
-            <li>(Planned) ASSIMP (In repository, not yet implemented)</li>
-        </ul>
+      <div class="col-md-6">
+        <div class="border border-info h-100 overflow-hidden feature-card">
+          <div class="bg-info bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-gpu-card me-2"></i>
+            <span>RENDERING</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>OpenGL implementation with abstraction</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Advanced shader support</li>
+            <li class="d-flex"><span class="text-success me-2">></span>Framebuffer post-processing</li>
+          </ul>
+        </div>
       </div>
-      <h2 class="text-success-light">
-        What I've learned
-      </h2>
-      <p>I've learned a lot about:</p>
-      <h3 class="text-warning">Projects / Solutions</h3>
-      <div class="container d-flex">
-        <ul class="text-start mx-auto-off">
-            <li>Pre-Processor Definitions</li>
-            <li>Precompiled Headers</li>
-            <li>Core - App Linking</li>
-            <li>Solution Building Through Premake5 / Cmake / ect</li>
-        </ul>
-      </div>
-      <h3 class="text-warning">Programming</h3>
-      <div class="container d-flex">
-        <ul class="text-start mx-auto-off">
-            <li>Using linear algebra for lighting calculations and different space matrices</li>
-            <li>A lot of practice with Header Definitions and CPP Implementations</li>
-            <li>Picking a style and sticking to it (cleaner and more consistent code)</li>
-            <li>Static Cast(Compile Time) vs Dynamic Cast (Runtime, does inheritance check)</li>
-        </ul>
-      </div>
-      <h3 class="text-warning">OpenGL/GLAD/GLFW/ImGui</h3>
-      <div class="container d-flex">
-        <ul class="text-start mx-auto-off">
-            <li>Rendering / Graphics pipeline</li>
-            <li>Creating and using GLSL shaders</li>
-            <li>Phong Lighting</li>
-            <li>More practice with meshes, vertices, triangles, ect</li>
-            <li>ImGui GUI rendering</li>
-        </ul>
-      </div>
-      <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
-      <!-- extra space -->
-      <div style="height: 150px;"></div>
       
+      <div class="col-md-6">
+        <div class="border border-warning h-100 overflow-hidden feature-card">
+          <div class="bg-warning bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-vector-pen me-2"></i>
+            <span>PHYSICS</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Box2D integration</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Wrapper 2D Nodes for B2Bodies</li>
+          </ul>
+        </div>
+      </div>
       
+      <div class="col-md-6">
+        <div class="border border-success h-100 overflow-hidden feature-card">
+          <div class="bg-success bg-opacity-25 ps-2 pe-2 pt-1 pb-1 font-monospace d-flex align-items-center">
+            <i class="bi bi-ui-checks me-2"></i>
+            <span>UI_SYSTEM</span>
+          </div>
+          <ul class="list-unstyled p-3 m-0">
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>ImGui with experimental docking</li>
+            <li class="mb-2 d-flex"><span class="text-success me-2">></span>Custom UI components</li>
+            <!-- <li class="d-flex"><span class="text-success me-2">></span>Editor tools</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="barlow-regular text-warning border-bottom border-warning pb-1">TECH_STACK</h2>
+    
+    <div class="row mt-3 mb-4">
+      <div class="col-md-6 mb-3">
+        <div class="border border-primary h-100 p-0 overflow-hidden">
+          <div class="bg-primary bg-opacity-10 ps-2 pe-2 pt-1 pb-1 font-monospace border-bottom border-primary">
+            <span>CORE_LIBS</span>
+          </div>
+          <div class="p-2">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://www.opengl.org" target="_blank" class="text-info link-underline link-underline-opacity-0">OpenGL</a>;</span>
+                <span class="badge bg-primary">Graphics</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://github.com/glfw/glfw" target="_blank" class="text-info link-underline link-underline-opacity-0">GLFW</a>;</span>
+                <span class="badge bg-primary">Window</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://github.com/g-truc/glm" target="_blank" class="text-info link-underline link-underline-opacity-0">GLM</a>;</span>
+                <span class="badge bg-primary">Math</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://box2d.org" target="_blank" class="text-info link-underline link-underline-opacity-0">Box2D</a>;</span>
+                <span class="badge bg-primary">Physics</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://partner.steamgames.com/doc/sdk" target="_blank" class="text-info link-underline link-underline-opacity-0">Steamworks</a>;</span>
+                <span class="badge bg-primary">P2P</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span><code class="text-primary">#include</code> <a href="https://vcpkg.io/en/" target="_blank" class="text-info link-underline link-underline-opacity-0">VCPKG</a>;</span>
+                <span class="badge bg-primary">Dependencies</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-secondary h-100 p-0 overflow-hidden">
+          <div class="bg-secondary bg-opacity-10 ps-2 pe-2 pt-1 pb-1 font-monospace border-bottom border-secondary">
+            <span>UTILS</span>
+          </div>
+          <div class="p-2">
+            <ul class="list-unstyled mb-0">
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/gabime/spdlog" target="_blank" class="text-info link-underline link-underline-opacity-0">spdlog</a>;</span>
+                <span class="badge bg-secondary">Logging</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/nothings/stb" target="_blank" class="text-info link-underline link-underline-opacity-0">stb</a>;</span>
+                <span class="badge bg-secondary">Utils</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/nlohmann/json" target="_blank" class="text-info link-underline link-underline-opacity-0">nlohmann-json</a>;</span>
+                <span class="badge bg-secondary">Json</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/jhasse/poly2tri" target="_blank" class="text-info link-underline link-underline-opacity-0">Poly2Tri</a>;</span>
+                <span class="badge bg-secondary">Triangulation</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/Auburn/FastNoiseLite" target="_blank" class="text-info link-underline link-underline-opacity-0">FastNoiseLite</a>;</span>
+                <span class="badge bg-secondary">Noise</span>
+              </li>
+              <li class="mb-1 d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/ocornut/imgui" target="_blank" class="text-info link-underline link-underline-opacity-0">ImGui</a>;</span>
+                <span class="badge bg-secondary">Debug UI</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span><code class="text-secondary">#include</code> <a href="https://github.com/google/snappy" target="_blank" class="text-info link-underline link-underline-opacity-0">Snappy</a>;</span>
+                <span class="badge bg-secondary">Compression</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h2 class="barlow-regular text-warning border-bottom border-warning pb-1 mt-4">ARCHITECTURE</h2>
+    
+    <div class="border border-success mb-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-success bg-opacity-10 border-bottom border-success font-monospace">
+        <i class="bi bi-cpu me-2"></i>
+        <span>CORE_SYSTEMS</span>
+      </div>
+      <div class="p-3">
+        <pre class="bg-dark text-light border border-secondary p-2 font-monospace mb-0"><code>// Core architecture components
+- Event-driven system with custom events
+- Layer-based application structure
+- Resource management for assets
+- Signal/slot inter-component communication</code></pre>
+      </div>
+    </div>
+    
+    
+    <div class="border border-info mb-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-info bg-opacity-10 border-bottom border-info font-monospace">
+        <i class="bi bi-gpu-card me-2"></i>
+        <span>RENDERING</span>
+      </div>
+      <div class="p-3">
+        <pre class="bg-dark text-light border border-secondary p-2 font-monospace mb-0"><code>// Rendering pipeline
+- Abstracted renderer with OpenGL implementation
+- 2D and 3D rendering capabilities
+- Camera systems (orthographic/perspective)
+- Material and shader management
+- Framebuffer for advanced techniques</code></pre>
+      </div>
+    </div>
+
+    <div class="border border-primary mb-4 mt-4 overflow-hidden neo-brutalist-card">
+      <div class="ps-3 pe-3 pt-2 pb-2 bg-primary bg-opacity-10 border-bottom border-primary font-monospace">
+        <i class="bi bi-diagram-3-fill me-2"></i>
+        <span>NETWORKING</span>
+      </div>
+      <div class="p-3">
+        <p class="font-monospace mb-2 text-light"><span class="text-primary">#include</span> <<a class="text-info link-underline link-underline-opacity-0" href="https://partner.steamgames.com" target="_blank">steam/steam_api</a>></p>
+        
+        <p class="mb-2">
+          Originally implemented multiplayer using Asio's TCP/UDP sockets, following <a class="text-info link-underline link-underline-opacity-0" href="https://www.youtube.com/@javidx9" target="_blank">javidx9 (OLC)</a> tutorials.
+        </p>
+        <p class="mb-2">
+          Later added Steamworks API for P2P connections with NAT punch-through.
+        </p>
+        <p class="mb-0">
+          Planned synchronization approach based on <a class="text-info link-underline link-underline-opacity-0" href="https://factorio.com/blog" target="_blank">Factorio</a>'s multi-client simulation techniques.
+        </p>
+      </div>
+    </div>
+    
+    <h2 class="barlow-regular text-warning border-bottom border-warning pb-1 mt-5">SKILLS_ACQUIRED</h2>
+    <div class="row mt-3 mb-4">
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-kanban me-2"></i>PROJECT_MGMT</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Pre-processor definitions</li>
+            <li class="mb-1"><code class="text-success">→</code> Precompiled headers</li>
+            <li class="mb-1"><code class="text-success">→</code> Core-App linking patterns</li>
+            <li><code class="text-success">→</code> Build system configuration</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-braces me-2"></i>PROGRAMMING</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Linear algebra for graphics</li>
+            <li class="mb-1"><code class="text-success">→</code> Header-implementation separation</li>
+            <li class="mb-1"><code class="text-success">→</code> Type casting (static/dynamic)</li>
+            <li><code class="text-success">→</code> Smart pointers (shared/weak)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-gpu-card me-2"></i>GRAPHICS</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Rendering pipeline implementation</li>
+            <li class="mb-1"><code class="text-success">→</code> GLSL shader development</li>
+            <li class="mb-1"><code class="text-success">→</code> Lighting models (Phong)</li>
+            <li><code class="text-success">→</code> Mesh generation and manipulation</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <div class="border border-light h-100 p-2 neo-brutalist-card">
+          <h3 class="h5 text-warning font-monospace"><i class="bi bi-controller me-2"></i>GAME_DEV</h3>
+          <ul class="list-unstyled">
+            <li class="mb-1"><code class="text-success">→</code> Particle systems</li>
+            <li class="mb-1"><code class="text-success">→</code> Multiplayer networking</li>
+            <li class="mb-1"><code class="text-success">→</code> Chunk-based world management</li>
+            <li><code class="text-success">→</code> Physics simulation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <p class="font-monospace border-top border-secondary pt-3 mt-5">
+      <span class="text-success">// </span>
+      See the engine in action in <a href="pyxisgame.html" class="text-info link-underline link-underline-opacity-0">Pyxis Game</a>
+    </p>
+    
+    <a href="../projects.html" class="display-1 border-2 link-underline link-underline-opacity-0 text-info">←</a>
+    <!-- extra space -->
+    <div style="height: 150px;"></div>
 
   </main>
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="../neo-tech.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </body>
 </html>
