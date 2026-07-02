@@ -72,7 +72,7 @@ function createTechParticles() {
   const symbols = ['0', '1', '+', '-', '>', '<', '/', '*', '{', '}', '[', ']', '|', '&'];
   
   // Create particles
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 80; i++) {
     createParticle(particleContainer, symbols);
   }
 }
@@ -85,7 +85,7 @@ function createParticle(container, symbols) {
   const symbol = symbols[Math.floor(Math.random() * symbols.length)];
   const x = Math.random() * window.innerWidth;
   const y = Math.random() * window.innerHeight;
-  const duration = Math.random() * 60 + 30; // 30-90s
+  const duration = Math.random() * 30 + 15; // 15-45s
   const delay = Math.random() * 10; // 0-10s
   
   // Styling
@@ -107,19 +107,16 @@ function createParticle(container, symbols) {
     style.textContent = `
       @keyframes float {
         0% {
-          transform: translateY(0) rotate(0deg);
-          opacity: 0.07;
+          opacity: 0.8;
         }
         25% {
-          opacity: 0.1;
+          opacity: 0.6;
         }
         50% {
-          transform: translateY(-${window.innerHeight * 0.7}px) rotate(180deg);
-          opacity: 0.03;
+          opacity: 0.4;
         }
         100% {
-          transform: translateY(-${window.innerHeight * 1.4}px) rotate(360deg);
-          opacity: 0;
+          opacity: 0.2;
         }
       }
     `;

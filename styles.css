@@ -335,12 +335,12 @@ body.bg-dark::before {
   border: 2px solid var(--neon-green) !important;
   margin-right: 5px;
   border-bottom: none !important;
-  background-color: rgba(47, 227, 98, 0.1) !important;
+  background-color: rgba(47, 227, 98, 0) !important;
 }
 
 .nav-tabs .nav-link.active {
-  background-color: var(--dark-card) !important;
-  color: white !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: black !important;
   border-bottom-color: var(--dark-card) !important;
 }
 
